@@ -14,11 +14,38 @@ let package = Package(
             name: "FoodKeeperFoundation",
             targets: ["FoodKeeperFoundation"]),
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/SnapKit/SnapKit",
+            exact: "5.7.1"
+        ),
+        .package(
+            url: "https://github.com/Moya/Moya",
+            .upToNextMajor(
+                from: "15.0.3"
+            )
+        ),
+        .package(
+            url: "https://github.com/ReactiveX/RxSwift",
+            .upToNextMajor(
+                from: "6.9.1"
+            )
+        ),
+        .package(
+            url: "https://github.com/onevcat/Kingfisher",
+            exact: "8.6.2"
+        ),
+    ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "FoodKeeperFoundation"),
-
+            name: "FoodKeeperFoundation",
+            dependencies: [
+                "Moya",
+                "RxSwift",
+//                "RxCocoa",
+                "SnapKit",
+                "Kingfisher",
+            ]
+        ),
     ]
 )

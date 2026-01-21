@@ -15,6 +15,14 @@
 		06B970242F21066600DB6132 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970232F21066600DB6132 /* Domain */; };
 		06B970272F21066E00DB6132 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970262F21066E00DB6132 /* Data */; };
 		06B9702A2F21067A00DB6132 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970292F21067A00DB6132 /* FoodKeeperFoundation */; };
+		06B970342F21130700DB6132 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970332F21130700DB6132 /* RxCocoa */; };
+		06B970362F21130700DB6132 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970352F21130700DB6132 /* RxSwift */; };
+		06B970392F2114A400DB6132 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970382F2114A400DB6132 /* Kingfisher */; };
+		06B9703C2F2114B900DB6132 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 06B9703B2F2114B900DB6132 /* SnapKit */; };
+		06B9703F2F21150200DB6132 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 06B9703E2F21150200DB6132 /* Moya */; };
+		06B970422F21151300DB6132 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970412F21151300DB6132 /* Alamofire */; };
+		06B970452F211B3600DB6132 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970442F211B3600DB6132 /* Domain */; };
+		06B970482F211B4C00DB6132 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970472F211B4C00DB6132 /* Data */; };
 		06C294D82F20F455006CF961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06C294CF2F20F455006CF961 /* Assets.xcassets */; };
 		06C294DA2F20F455006CF961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C294D22F20F455006CF961 /* LaunchScreen.storyboard */; };
 		06C294DB2F20F455006CF961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C294D42F20F455006CF961 /* Main.storyboard */; };
@@ -25,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06B970302F210C7B00DB6132 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		06B970312F210C8A00DB6132 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		06C294B62F20F43F006CF961 /* FoodKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C294CE2F20F455006CF961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06C294CF2F20F455006CF961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,8 +51,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B970482F211B4C00DB6132 /* Data in Frameworks */,
+				06B970422F21151300DB6132 /* Alamofire in Frameworks */,
+				06B970392F2114A400DB6132 /* Kingfisher in Frameworks */,
 				06C294E22F20F946006CF961 /* FoodKeeperFoundation in Frameworks */,
+				06B9703C2F2114B900DB6132 /* SnapKit in Frameworks */,
 				06B970242F21066600DB6132 /* Domain in Frameworks */,
+				06B970342F21130700DB6132 /* RxCocoa in Frameworks */,
 				06B970152F21058000DB6132 /* FoodKeeperFoundation in Frameworks */,
 				06B9701E2F21064200DB6132 /* Data in Frameworks */,
 				06B9701B2F21060100DB6132 /* Domain in Frameworks */,
@@ -50,6 +65,9 @@
 				06B970272F21066E00DB6132 /* Data in Frameworks */,
 				06B970212F21064E00DB6132 /* FoodKeeperFoundation in Frameworks */,
 				06B9702A2F21067A00DB6132 /* FoodKeeperFoundation in Frameworks */,
+				06B9703F2F21150200DB6132 /* Moya in Frameworks */,
+				06B970452F211B3600DB6132 /* Domain in Frameworks */,
+				06B970362F21130700DB6132 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +96,8 @@
 		06B9702D2F2106C500DB6132 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				06C294D52F20F455006CF961 /* SceneDelegate.swift */,
 				06C294CE2F20F455006CF961 /* AppDelegate.swift */,
+				06C294D52F20F455006CF961 /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -96,6 +114,8 @@
 		06C294AD2F20F43F006CF961 = {
 			isa = PBXGroup;
 			children = (
+				06B970312F210C8A00DB6132 /* Release.xcconfig */,
+				06B970302F210C7B00DB6132 /* Debug.xcconfig */,
 				06C294DF2F20F469006CF961 /* .gitignore */,
 				06C294D72F20F455006CF961 /* FoodKeeper */,
 				06C294B72F20F43F006CF961 /* Products */,
@@ -145,6 +165,14 @@
 				06B970232F21066600DB6132 /* Domain */,
 				06B970262F21066E00DB6132 /* Data */,
 				06B970292F21067A00DB6132 /* FoodKeeperFoundation */,
+				06B970332F21130700DB6132 /* RxCocoa */,
+				06B970352F21130700DB6132 /* RxSwift */,
+				06B970382F2114A400DB6132 /* Kingfisher */,
+				06B9703B2F2114B900DB6132 /* SnapKit */,
+				06B9703E2F21150200DB6132 /* Moya */,
+				06B970412F21151300DB6132 /* Alamofire */,
+				06B970442F211B3600DB6132 /* Domain */,
+				06B970472F211B4C00DB6132 /* Data */,
 			);
 			productName = FoodKeeper;
 			productReference = 06C294B62F20F43F006CF961 /* FoodKeeper.app */;
@@ -156,9 +184,9 @@
 		06C294AE2F20F43F006CF961 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1640;
-				LastUpgradeCheck = 1640;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					06C294B52F20F43F006CF961 = {
 						CreatedOnToolsVersion = 16.4;
@@ -175,9 +203,14 @@
 			mainGroup = 06C294AD2F20F43F006CF961;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				06B970222F21066600DB6132 /* XCLocalSwiftPackageReference "Package/Domain" */,
-				06B970252F21066E00DB6132 /* XCLocalSwiftPackageReference "Package/Data" */,
-				06B970282F21067A00DB6132 /* XCLocalSwiftPackageReference "Package/FoodKeeperFoundation" */,
+				06B970322F21130700DB6132 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				06B970372F2114A400DB6132 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				06B9703A2F2114B900DB6132 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				06B9703D2F21150200DB6132 /* XCRemoteSwiftPackageReference "Moya" */,
+				06B970402F21151300DB6132 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				06B970432F211B3600DB6132 /* XCLocalSwiftPackageReference "Package/Domain" */,
+				06B970462F211B4C00DB6132 /* XCLocalSwiftPackageReference "Package/Data" */,
+				06B970492F211B5700DB6132 /* XCLocalSwiftPackageReference "Package/FoodKeeperFoundation" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 06C294B72F20F43F006CF961 /* Products */;
@@ -237,6 +270,7 @@
 /* Begin XCBuildConfiguration section */
 		06C294CA2F20F441006CF961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B970302F210C7B00DB6132 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -270,6 +304,7 @@
 		};
 		06C294CB2F20F441006CF961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B970312F210C8A00DB6132 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +338,7 @@
 		};
 		06C294CC2F20F441006CF961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B970302F210C7B00DB6132 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -360,6 +396,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -367,6 +404,7 @@
 		};
 		06C294CD2F20F441006CF961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B970312F210C8A00DB6132 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -417,6 +455,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -446,19 +485,62 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		06B970222F21066600DB6132 /* XCLocalSwiftPackageReference "Package/Domain" */ = {
+		06B970432F211B3600DB6132 /* XCLocalSwiftPackageReference "Package/Domain" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Package/Domain;
 		};
-		06B970252F21066E00DB6132 /* XCLocalSwiftPackageReference "Package/Data" */ = {
+		06B970462F211B4C00DB6132 /* XCLocalSwiftPackageReference "Package/Data" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Package/Data;
 		};
-		06B970282F21067A00DB6132 /* XCLocalSwiftPackageReference "Package/FoodKeeperFoundation" */ = {
+		06B970492F211B5700DB6132 /* XCLocalSwiftPackageReference "Package/FoodKeeperFoundation" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Package/FoodKeeperFoundation;
 		};
 /* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06B970322F21130700DB6132 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.1;
+			};
+		};
+		06B970372F2114A400DB6132 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+		06B9703A2F2114B900DB6132 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		06B9703D2F21150200DB6132 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		06B970402F21151300DB6132 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		06B970142F21058000DB6132 /* FoodKeeperFoundation */ = {
@@ -492,6 +574,44 @@
 		06B970292F21067A00DB6132 /* FoodKeeperFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FoodKeeperFoundation;
+		};
+		06B970332F21130700DB6132 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B970322F21130700DB6132 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		06B970352F21130700DB6132 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B970322F21130700DB6132 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		06B970382F2114A400DB6132 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B970372F2114A400DB6132 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		06B9703B2F2114B900DB6132 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B9703A2F2114B900DB6132 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		06B9703E2F21150200DB6132 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B9703D2F21150200DB6132 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		06B970412F21151300DB6132 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B970402F21151300DB6132 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		06B970442F211B3600DB6132 /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
+		06B970472F211B4C00DB6132 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
 		};
 		06C294E12F20F946006CF961 /* FoodKeeperFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
