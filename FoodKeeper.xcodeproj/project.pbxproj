@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06B970152F21058000DB6132 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970142F21058000DB6132 /* FoodKeeperFoundation */; };
+		06B970182F2105F400DB6132 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970172F2105F400DB6132 /* Data */; };
+		06B9701B2F21060100DB6132 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 06B9701A2F21060100DB6132 /* Domain */; };
+		06B9701E2F21064200DB6132 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 06B9701D2F21064200DB6132 /* Data */; };
+		06B970212F21064E00DB6132 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970202F21064E00DB6132 /* FoodKeeperFoundation */; };
+		06B970242F21066600DB6132 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970232F21066600DB6132 /* Domain */; };
+		06B970272F21066E00DB6132 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970262F21066E00DB6132 /* Data */; };
+		06B9702A2F21067A00DB6132 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970292F21067A00DB6132 /* FoodKeeperFoundation */; };
 		06C294D82F20F455006CF961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06C294CF2F20F455006CF961 /* Assets.xcassets */; };
 		06C294DA2F20F455006CF961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C294D22F20F455006CF961 /* LaunchScreen.storyboard */; };
 		06C294DB2F20F455006CF961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C294D42F20F455006CF961 /* Main.storyboard */; };
 		06C294DC2F20F455006CF961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C294CE2F20F455006CF961 /* AppDelegate.swift */; };
 		06C294DD2F20F455006CF961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C294D52F20F455006CF961 /* SceneDelegate.swift */; };
 		06C294DE2F20F455006CF961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C294D62F20F455006CF961 /* ViewController.swift */; };
+		06C294E22F20F946006CF961 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06C294E12F20F946006CF961 /* FoodKeeperFoundation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06B9702F2F2107B600DB6132 /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
 		06C294B62F20F43F006CF961 /* FoodKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C294CE2F20F455006CF961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06C294CF2F20F455006CF961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,15 +42,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C294E22F20F946006CF961 /* FoodKeeperFoundation in Frameworks */,
+				06B970242F21066600DB6132 /* Domain in Frameworks */,
+				06B970152F21058000DB6132 /* FoodKeeperFoundation in Frameworks */,
+				06B9701E2F21064200DB6132 /* Data in Frameworks */,
+				06B9701B2F21060100DB6132 /* Domain in Frameworks */,
+				06B970182F2105F400DB6132 /* Data in Frameworks */,
+				06B970272F21066E00DB6132 /* Data in Frameworks */,
+				06B970212F21064E00DB6132 /* FoodKeeperFoundation in Frameworks */,
+				06B9702A2F21067A00DB6132 /* FoodKeeperFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06B9702B2F21069900DB6132 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06C294D22F20F455006CF961 /* LaunchScreen.storyboard */,
+				06C294CF2F20F455006CF961 /* Assets.xcassets */,
+				06C294D02F20F455006CF961 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		06B9702C2F2106A600DB6132 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				06B9702D2F2106C500DB6132 /* App */,
+				06B9702E2F2106D900DB6132 /* Presentation */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		06B9702D2F2106C500DB6132 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				06C294D52F20F455006CF961 /* SceneDelegate.swift */,
+				06C294CE2F20F455006CF961 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		06B9702E2F2106D900DB6132 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				06C294D42F20F455006CF961 /* Main.storyboard */,
+				06C294D62F20F455006CF961 /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		06C294AD2F20F43F006CF961 = {
 			isa = PBXGroup;
 			children = (
+				06B9702F2F2107B600DB6132 /* Secret.xcconfig */,
 				06C294DF2F20F469006CF961 /* .gitignore */,
 				06C294D72F20F455006CF961 /* FoodKeeper */,
 				06C294B72F20F43F006CF961 /* Products */,
@@ -58,13 +115,8 @@
 		06C294D72F20F455006CF961 /* FoodKeeper */ = {
 			isa = PBXGroup;
 			children = (
-				06C294CE2F20F455006CF961 /* AppDelegate.swift */,
-				06C294CF2F20F455006CF961 /* Assets.xcassets */,
-				06C294D02F20F455006CF961 /* Info.plist */,
-				06C294D22F20F455006CF961 /* LaunchScreen.storyboard */,
-				06C294D42F20F455006CF961 /* Main.storyboard */,
-				06C294D52F20F455006CF961 /* SceneDelegate.swift */,
-				06C294D62F20F455006CF961 /* ViewController.swift */,
+				06B9702B2F21069900DB6132 /* Resources */,
+				06B9702C2F2106A600DB6132 /* Sources */,
 			);
 			path = FoodKeeper;
 			sourceTree = "<group>";
@@ -86,6 +138,15 @@
 			);
 			name = FoodKeeper;
 			packageProductDependencies = (
+				06C294E12F20F946006CF961 /* FoodKeeperFoundation */,
+				06B970142F21058000DB6132 /* FoodKeeperFoundation */,
+				06B970172F2105F400DB6132 /* Data */,
+				06B9701A2F21060100DB6132 /* Domain */,
+				06B9701D2F21064200DB6132 /* Data */,
+				06B970202F21064E00DB6132 /* FoodKeeperFoundation */,
+				06B970232F21066600DB6132 /* Domain */,
+				06B970262F21066E00DB6132 /* Data */,
+				06B970292F21067A00DB6132 /* FoodKeeperFoundation */,
 			);
 			productName = FoodKeeper;
 			productReference = 06C294B62F20F43F006CF961 /* FoodKeeper.app */;
@@ -115,6 +176,11 @@
 			);
 			mainGroup = 06C294AD2F20F43F006CF961;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				06B970222F21066600DB6132 /* XCLocalSwiftPackageReference "Package/Domain" */,
+				06B970252F21066E00DB6132 /* XCLocalSwiftPackageReference "Package/Data" */,
+				06B970282F21067A00DB6132 /* XCLocalSwiftPackageReference "Package/FoodKeeperFoundation" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 06C294B72F20F43F006CF961 /* Products */;
 			projectDirPath = "";
@@ -184,8 +250,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -193,9 +260,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sixteenis.FoodKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -212,8 +283,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -221,9 +293,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sixteenis.FoodKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -370,6 +446,60 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		06B970222F21066600DB6132 /* XCLocalSwiftPackageReference "Package/Domain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Package/Domain;
+		};
+		06B970252F21066E00DB6132 /* XCLocalSwiftPackageReference "Package/Data" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Package/Data;
+		};
+		06B970282F21067A00DB6132 /* XCLocalSwiftPackageReference "Package/FoodKeeperFoundation" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Package/FoodKeeperFoundation;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06B970142F21058000DB6132 /* FoodKeeperFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FoodKeeperFoundation;
+		};
+		06B970172F2105F400DB6132 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		06B9701A2F21060100DB6132 /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
+		06B9701D2F21064200DB6132 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		06B970202F21064E00DB6132 /* FoodKeeperFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FoodKeeperFoundation;
+		};
+		06B970232F21066600DB6132 /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
+		06B970262F21066E00DB6132 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		06B970292F21067A00DB6132 /* FoodKeeperFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FoodKeeperFoundation;
+		};
+		06C294E12F20F946006CF961 /* FoodKeeperFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FoodKeeperFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06C294AE2F20F43F006CF961 /* Project object */;
 }
