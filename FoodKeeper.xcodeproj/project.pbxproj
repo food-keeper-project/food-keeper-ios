@@ -25,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06B9702F2F2107B600DB6132 /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
 		06C294B62F20F43F006CF961 /* FoodKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C294CE2F20F455006CF961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06C294CF2F20F455006CF961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,7 +96,6 @@
 		06C294AD2F20F43F006CF961 = {
 			isa = PBXGroup;
 			children = (
-				06B9702F2F2107B600DB6132 /* Secret.xcconfig */,
 				06C294DF2F20F469006CF961 /* .gitignore */,
 				06C294D72F20F455006CF961 /* FoodKeeper */,
 				06C294B72F20F43F006CF961 /* Products */,

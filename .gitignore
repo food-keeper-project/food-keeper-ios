@@ -7,7 +7,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=swift
 
 # Secret #
-Secret.xcconfig
+Debug.xcconfig
+Release.xcconfig
 APIKey.swift
 Constant.swift
 .DS_Store
