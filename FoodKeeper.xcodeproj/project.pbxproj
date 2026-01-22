@@ -30,7 +30,6 @@
 		06B970542F223EA900DB6132 /* NanumSquareNeo-cBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06B9704D2F223EA900DB6132 /* NanumSquareNeo-cBd.ttf */; };
 		06C294D82F20F455006CF961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06C294CF2F20F455006CF961 /* Assets.xcassets */; };
 		06C294DA2F20F455006CF961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C294D22F20F455006CF961 /* LaunchScreen.storyboard */; };
-		06C294DB2F20F455006CF961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C294D42F20F455006CF961 /* Main.storyboard */; };
 		06C294DC2F20F455006CF961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C294CE2F20F455006CF961 /* AppDelegate.swift */; };
 		06C294DD2F20F455006CF961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C294D52F20F455006CF961 /* SceneDelegate.swift */; };
 		06C294DE2F20F455006CF961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C294D62F20F455006CF961 /* ViewController.swift */; };
@@ -50,7 +49,6 @@
 		06C294CF2F20F455006CF961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06C294D02F20F455006CF961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06C294D12F20F455006CF961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		06C294D32F20F455006CF961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06C294D52F20F455006CF961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		06C294D62F20F455006CF961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06C294DF2F20F469006CF961 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 		06B9702E2F2106D900DB6132 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				06C294D42F20F455006CF961 /* Main.storyboard */,
 				06C294D62F20F455006CF961 /* ViewController.swift */,
 			);
 			path = Presentation;
@@ -257,7 +254,6 @@
 				06B970542F223EA900DB6132 /* NanumSquareNeo-cBd.ttf in Resources */,
 				06C294D82F20F455006CF961 /* Assets.xcassets in Resources */,
 				06C294DA2F20F455006CF961 /* LaunchScreen.storyboard in Resources */,
-				06C294DB2F20F455006CF961 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +281,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		06C294D42F20F455006CF961 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06C294D32F20F455006CF961 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -306,10 +294,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G9LS4YQCM2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodKeeper/Info.plist;
+				INFOPLIST_FILE = FoodKeeper/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -340,10 +327,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G9LS4YQCM2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodKeeper/Info.plist;
+				INFOPLIST_FILE = FoodKeeper/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
