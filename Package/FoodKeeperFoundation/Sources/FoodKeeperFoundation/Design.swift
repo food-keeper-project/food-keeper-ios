@@ -29,6 +29,7 @@ public enum Design {
     }
     
     public enum Color {
+        public static let foreground = UIColor(hex: "2F2F2F")
         public static let background = UIColor(hex: "FBFBFB")
         public static let mainOrange = UIColor(hex: "FF7F1E")
         public static let accentYellow = UIColor(hex: "FECE00")
@@ -42,6 +43,8 @@ public enum Design {
     }
     
     public enum Font {
+        public static let heading = UIFont.asFont(.nanumSquareNeoRegular, 36)
+        
         public static let asTitle26 = UIFont.asFont(.nanumSquareNeoRegular, 26)
         public static let asTitle22 = UIFont.asFont(.nanumSquareNeoRegular, 22)
         public static let asTitle19 = UIFont.asFont(.nanumSquareNeoRegular, 19)
