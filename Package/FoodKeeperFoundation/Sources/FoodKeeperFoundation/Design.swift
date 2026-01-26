@@ -29,7 +29,7 @@ public enum Design {
     }
     
     public enum StringLiteral {
-        public static let appName = "키친로그"
+        public static let appName = Secret.appName
         
         public static let tabBarHome = "홈"
         public static let tabFoodAdd = "식재료 추가"

@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIImage {
-    public static let asAppIcon = UIImage(named: "ColorAppLogo")
+    public static let asAppIcon = UIImage(named: Secret.appIcon)
     public static let asAppLogo = UIImage(named: "AppLogo")
     
     public static let asCartPlus = UIImage(named: "CartPlus")
