@@ -7,6 +7,19 @@
 
 #if canImport(UIKit)
 import UIKit
+extension UIColor {
+    public static let asForeground = UIColor(hex: "2F2F2F")
+    public static let asBackground = UIColor(hex: "FBFBFB")
+    public static let asMainOrange = UIColor(hex: "FF7F1E")
+    public static let asAccentYellow = UIColor(hex: "FECE00")
+    
+    public static let asBlack = UIColor(hex: "2F2F2F")
+    public static let asGray1 = UIColor(hex: "A2A2A2")
+    public static let asGray2 = UIColor(hex: "BBBBBB")
+    public static let asGray3 = UIColor(hex: "D7D7D7")
+    public static let asGray4 = UIColor(hex: "DEDEDE")
+    public static let asGray5 = UIColor(hex: "F5F5F5")
+}
 
 extension UIColor {
     convenience init(hex: String) {

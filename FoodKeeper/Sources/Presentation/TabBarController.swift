@@ -36,7 +36,7 @@ final class TabBarController: UITabBarController {
         // MARK: - ViewController
         private var viewController: UIViewController {
             let vc = UIViewController()
-            vc.view.backgroundColor = Design.Color.background
+            vc.view.backgroundColor = .asBackground
             vc.title = title
             switch self {
             case .home:
@@ -77,26 +77,26 @@ final class TabBarController: UITabBarController {
         private var image: UIImage? {
             switch self {
             case .home:
-                return Design.ImageLiteral.home
+                return .asHome
             case .foodAdd:
-                return Design.ImageLiteral.cartPlus
+                return .asCartPlus
             case .recipe:
-                return Design.ImageLiteral.chefHat
+                return .asChefHat
             case .myPage:
-                return Design.ImageLiteral.userCircle
+                return .asUserCircle
             }
         }
 
         private var selectedImage: UIImage? {
             switch self {
             case .home:
-                return Design.ImageLiteral.home
+                return .asHome
             case .foodAdd:
-                return Design.ImageLiteral.cartPlus
+                return .asCartPlus
             case .recipe:
-                return Design.ImageLiteral.chefHat
+                return .asChefHat
             case .myPage:
-                return Design.ImageLiteral.userCircle
+                return .asUserCircle
             }
         }
     }

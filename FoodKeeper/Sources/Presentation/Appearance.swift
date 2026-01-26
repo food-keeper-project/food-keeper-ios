@@ -19,25 +19,25 @@ enum Appearance {
     private static func setUpNavigationBarUI() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = Design.Color.background
+        appearance.backgroundColor = .asBackground
         appearance.shadowColor = UIColor.clear
 
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
-        UINavigationBar.appearance().tintColor = Design.Color.foreground
+        UINavigationBar.appearance().tintColor = .asForeground
         UINavigationBar.appearance().titleTextAttributes = [
-            .font: Design.Font.heading,
-            .foregroundColor: Design.Color.foreground
+            .font: UIFont.asHeading,
+            .foregroundColor: UIColor.asForeground
         ]
     }
     private static func setUpTabBarUI() {
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = Design.Color.background
+        appearance.backgroundColor = .asForeground
         appearance.shadowColor = UIColor.clear
 
         UITabBar.appearance().standardAppearance = appearance
         UITabBar.appearance().scrollEdgeAppearance = appearance
-        UITabBar.appearance().tintColor = Design.Color.foreground
+        UITabBar.appearance().tintColor = UIColor.asForeground
     }
 }
