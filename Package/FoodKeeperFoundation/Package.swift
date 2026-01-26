@@ -41,8 +41,7 @@ let package = Package(
             name: "FoodKeeperFoundation",
             dependencies: [
                 "Moya",
-                "RxSwift",
-//                "RxCocoa",
+                .product(name: "RxCocoa", package: "RxSwift"),
                 "SnapKit",
                 "Kingfisher",
             ]
