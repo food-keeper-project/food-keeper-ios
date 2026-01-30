@@ -40,7 +40,7 @@ final class TabBarController: UITabBarController {
             vc.title = title
             switch self {
             case .home:
-                return vc
+                return HomeVC()
             case .foodAdd:
                 return vc
             case .recipe:

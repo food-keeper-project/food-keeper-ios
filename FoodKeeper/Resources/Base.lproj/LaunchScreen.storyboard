@@ -8,11 +8,6 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="NanumSquareNeo-cBd.ttf">
-            <string>NanumSquareNeoTTF-cBd</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -28,19 +23,20 @@
                                     <constraint firstAttribute="width" secondItem="ru5-oV-EcS" secondAttribute="height" multiplier="1:1" id="Gfl-k3-MnD"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="키친로그" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hL-F4-IH0">
-                                <rect key="frame" x="128.33333333333337" y="460.66666666666669" width="136.66666666666663" height="40"/>
-                                <fontDescription key="fontDescription" name="NanumSquareNeoTTF-cBd" family="NanumSquare Neo" pointSize="36"/>
-                                <color key="textColor" red="1" green="0.49803921568627452" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchAppName.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Pn-H5-c1I">
+                                <rect key="frame" x="101.66666666666669" y="457.66666666666669" width="190" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="E2D-Vk-ydm"/>
+                                    <constraint firstAttribute="width" constant="190" id="NFa-cp-D14"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2hL-F4-IH0" firstAttribute="centerX" secondItem="ru5-oV-EcS" secondAttribute="centerX" id="ZQd-7e-Jpd"/>
+                            <constraint firstItem="6Pn-H5-c1I" firstAttribute="top" secondItem="ru5-oV-EcS" secondAttribute="bottom" constant="30" id="3Au-0y-6sq"/>
+                            <constraint firstItem="6Pn-H5-c1I" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EL5-28-sfc"/>
                             <constraint firstItem="ru5-oV-EcS" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.39" id="jM1-zC-T5J"/>
-                            <constraint firstItem="2hL-F4-IH0" firstAttribute="top" secondItem="ru5-oV-EcS" secondAttribute="bottom" constant="33" id="lUC-PM-Z9j"/>
                             <constraint firstItem="ru5-oV-EcS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sLh-lE-urM"/>
                             <constraint firstItem="ru5-oV-EcS" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="zJd-r3-da5"/>
                         </constraints>
@@ -48,11 +44,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
     <resources>
         <image name="ColorAppLogo" width="933" height="933"/>
+        <image name="LaunchAppName.png" width="133.33332824707031" height="34"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
