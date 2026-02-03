@@ -16,6 +16,7 @@ extension UIImage {
     public static let asChefHat = UIImage(named: "ChefHat")
     public static let asHome = UIImage(named: "Home")
     public static let asUserCircle = UIImage(named: "UserCircle")
+    public static let asDanger = UIImage(named: "DangerTriangle")
     
 }
 #endif

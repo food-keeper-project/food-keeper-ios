@@ -26,10 +26,10 @@ final class ExpiringFoodView: BaseView {
     }
     private let warningImage = UIImageView().then {
         $0.contentMode = .scaleAspectFit
-        $0.image = UIImage.colorAppLogo
+        $0.image = UIImage.asDanger
     }
     
-    private let cv = UICollectionView()
+//    private let cv = UICollectionView()
 
     // 외부에서 데이터 주입
     let foods = PublishRelay<[FoodResponse]>()
@@ -37,8 +37,7 @@ final class ExpiringFoodView: BaseView {
     let didSelectFood = PublishRelay<FoodResponse>()
 
     override func setUpLayout() {
-        addSubview(cv)
-        [expiringInfo, warningImage, cv].forEach { self.addSubview($0) }
+        [expiringInfo, warningImage].forEach { self.addSubview($0) }
         expiringInfo.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(33)
             make.leading.equalToSuperview().inset(20)
@@ -50,36 +49,36 @@ final class ExpiringFoodView: BaseView {
             make.size.equalTo(80)
         }
         
-        cv.snp.makeConstraints { make in
-            make.top.equalTo(expiringInfo.snp.bottom).offset(28)
-            make.horizontalEdges.equalToSuperview()
-            make.height.equalTo(90)
-        }
+//        cv.snp.makeConstraints { make in
+//            make.top.equalTo(expiringInfo.snp.bottom).offset(28)
+//            make.horizontalEdges.equalToSuperview()
+//            make.height.equalTo(90)
+//        }
     }
 
     override func setUpUI() {
         backgroundColor = .asMainOrange
-        cv.backgroundColor = .clear
-        cv.register(ExpiringFoodCell.self, forCellWithReuseIdentifier: ExpiringFoodCell.id)
+//        cv.backgroundColor = .clear
+//        cv.register(ExpiringFoodCell.self, forCellWithReuseIdentifier: ExpiringFoodCell.id)
 
-        bind()
+//        bind()
     }
-
-    private func bind() {
-
-        // 데이터 바인딩
-        foods
-            .bind(to: cv.rx.items(
-                cellIdentifier: ExpiringFoodCell.id,
-                cellType: ExpiringFoodCell.self
-            )) { _, item, cell in
-                cell.configure(item)
-            }
-            .disposed(by: disposeBag)
-
-        // 셀 선택 이벤트
-        cv.rx.modelSelected(FoodResponse.self)
-            .bind(to: didSelectFood)
-            .disposed(by: disposeBag)
-    }
+//
+//    private func bind() {
+//
+//        // 데이터 바인딩
+//        foods
+//            .bind(to: cv.rx.items(
+//                cellIdentifier: ExpiringFoodCell.id,
+//                cellType: ExpiringFoodCell.self
+//            )) { _, item, cell in
+//                cell.configure(item)
+//            }
+//            .disposed(by: disposeBag)
+//
+//        // 셀 선택 이벤트
+//        cv.rx.modelSelected(FoodResponse.self)
+//            .bind(to: didSelectFood)
+//            .disposed(by: disposeBag)
+//    }
 }
