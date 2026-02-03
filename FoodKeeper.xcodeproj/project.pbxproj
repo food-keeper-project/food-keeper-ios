@@ -25,11 +25,6 @@
 		06B970422F21151300DB6132 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970412F21151300DB6132 /* Alamofire */; };
 		06B970452F211B3600DB6132 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970442F211B3600DB6132 /* Domain */; };
 		06B970482F211B4C00DB6132 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970472F211B4C00DB6132 /* Data */; };
-		06B970502F223EA900DB6132 /* NanumSquareNeo-dEb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06B9704E2F223EA900DB6132 /* NanumSquareNeo-dEb.ttf */; };
-		06B970512F223EA900DB6132 /* NanumSquareNeo-eHv.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06B9704F2F223EA900DB6132 /* NanumSquareNeo-eHv.ttf */; };
-		06B970522F223EA900DB6132 /* NanumSquareNeo-bRg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06B9704C2F223EA900DB6132 /* NanumSquareNeo-bRg.ttf */; };
-		06B970532F223EA900DB6132 /* NanumSquareNeo-aLt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06B9704B2F223EA900DB6132 /* NanumSquareNeo-aLt.ttf */; };
-		06B970542F223EA900DB6132 /* NanumSquareNeo-cBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06B9704D2F223EA900DB6132 /* NanumSquareNeo-cBd.ttf */; };
 		06B9705A2F2796D600DB6132 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970592F2796D600DB6132 /* Then */; };
 		06B9705C2F2796EE00DB6132 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B9705B2F2796EE00DB6132 /* Appearance.swift */; };
 		06B9705E2F27992800DB6132 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B9705D2F27992800DB6132 /* TabBarController.swift */; };
@@ -47,11 +42,6 @@
 		060C1F4B2F2D1E4A00205145 /* LaunchAppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchAppLogo.png; sourceTree = "<group>"; };
 		06B970302F210C7B00DB6132 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		06B970312F210C8A00DB6132 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		06B9704B2F223EA900DB6132 /* NanumSquareNeo-aLt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumSquareNeo-aLt.ttf"; sourceTree = "<group>"; };
-		06B9704C2F223EA900DB6132 /* NanumSquareNeo-bRg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumSquareNeo-bRg.ttf"; sourceTree = "<group>"; };
-		06B9704D2F223EA900DB6132 /* NanumSquareNeo-cBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumSquareNeo-cBd.ttf"; sourceTree = "<group>"; };
-		06B9704E2F223EA900DB6132 /* NanumSquareNeo-dEb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumSquareNeo-dEb.ttf"; sourceTree = "<group>"; };
-		06B9704F2F223EA900DB6132 /* NanumSquareNeo-eHv.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumSquareNeo-eHv.ttf"; sourceTree = "<group>"; };
 		06B9705B2F2796EE00DB6132 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		06B9705D2F27992800DB6132 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		06B970612F27B6EF00DB6132 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -97,7 +87,6 @@
 		06B9702B2F21069900DB6132 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				06B9704A2F223DA900DB6132 /* Font */,
 				06C294D22F20F455006CF961 /* LaunchScreen.storyboard */,
 				06C294CF2F20F455006CF961 /* Assets.xcassets */,
 				06C294D02F20F455006CF961 /* Info.plist */,
@@ -133,18 +122,6 @@
 				06B9705D2F27992800DB6132 /* TabBarController.swift */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		06B9704A2F223DA900DB6132 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				06B9704B2F223EA900DB6132 /* NanumSquareNeo-aLt.ttf */,
-				06B9704C2F223EA900DB6132 /* NanumSquareNeo-bRg.ttf */,
-				06B9704D2F223EA900DB6132 /* NanumSquareNeo-cBd.ttf */,
-				06B9704E2F223EA900DB6132 /* NanumSquareNeo-dEb.ttf */,
-				06B9704F2F223EA900DB6132 /* NanumSquareNeo-eHv.ttf */,
-			);
-			path = Font;
 			sourceTree = "<group>";
 		};
 		06B970602F27B5FA00DB6132 /* Home */ = {
@@ -274,13 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B970502F223EA900DB6132 /* NanumSquareNeo-dEb.ttf in Resources */,
 				060C1F4A2F2D1DFB00205145 /* LaunchAppName.png in Resources */,
-				06B970512F223EA900DB6132 /* NanumSquareNeo-eHv.ttf in Resources */,
-				06B970522F223EA900DB6132 /* NanumSquareNeo-bRg.ttf in Resources */,
 				060C1F4C2F2D1E4A00205145 /* LaunchAppLogo.png in Resources */,
-				06B970532F223EA900DB6132 /* NanumSquareNeo-aLt.ttf in Resources */,
-				06B970542F223EA900DB6132 /* NanumSquareNeo-cBd.ttf in Resources */,
 				06C294D82F20F455006CF961 /* Assets.xcassets in Resources */,
 				06C294DA2F20F455006CF961 /* LaunchScreen.storyboard in Resources */,
 			);

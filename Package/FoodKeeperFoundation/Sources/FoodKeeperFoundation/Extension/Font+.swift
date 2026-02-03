@@ -7,6 +7,7 @@
 
 #if canImport(UIKit)
 import UIKit
+import CoreText
 
 extension UIFont {
     public static let asHeading = UIFont.asFont(.nanumSquareNeoRegular, 36)
@@ -33,16 +34,41 @@ extension UIFont {
 }
 
 enum CustomFontName: String {
-    case nanumSquareNeoLight   = "NanumSquareNeo-aLt"
-    case nanumSquareNeoRegular = "NanumSquareNeo-bRg"
-    case nanumSquareNeoBold    = "NanumSquareNeo-cBd"
-    case nanumSquareNeoExtraBold = "NanumSquareNeo-dEb"
-    case nanumSquareNeoHeavy   = "NanumSquareNeo-eHv"
+    case nanumSquareNeoLight      = "NanumSquareNeoTTF-aLt"
+    case nanumSquareNeoRegular   = "NanumSquareNeoTTF-bRg"
+    case nanumSquareNeoBold      = "NanumSquareNeoTTF-cBd"
+    case nanumSquareNeoExtraBold = "NanumSquareNeoTTF-dEb"
+    case nanumSquareNeoHeavy     = "NanumSquareNeoTTF-eHv"
 }
 
 extension UIFont {
     static func asFont(_ font: CustomFontName, _ size: CGFloat) -> UIFont {
         return UIFont(name: font.rawValue, size: size) ?? UIFont.systemFont(ofSize: size)
     }
+    //커스텀 폰트 등록
+    public static func registerFonts() {
+        let fontNames = [
+            "NanumSquareNeo-aLt",
+            "NanumSquareNeo-bRg",
+            "NanumSquareNeo-cBd",
+            "NanumSquareNeo-dEb",
+            "NanumSquareNeo-eHv"
+        ]
+
+        fontNames.forEach { name in
+            guard
+                let url = Bundle.module.url(forResource: name, withExtension: "ttf"),
+                let data = try? Data(contentsOf: url),
+                let provider = CGDataProvider(data: data as CFData),
+                let font = CGFont(provider)
+            else {
+                assertionFailure("❌ Font not found: \(name)")
+                return
+            }
+
+            CTFontManagerRegisterGraphicsFont(font, nil)
+        }
+    }
 }
+
 #endif

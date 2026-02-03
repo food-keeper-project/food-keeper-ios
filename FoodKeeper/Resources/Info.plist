@@ -8,14 +8,6 @@
 	<string>$(APP_NAME)</string>
 	<key>BASE_URL</key>
 	<string>$(BASE_URL)</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>NanumSquareNeo-eHv.ttf</string>
-		<string>NanumSquareNeo-dEb.ttf</string>
-		<string>NanumSquareNeo-cBd.ttf</string>
-		<string>NanumSquareNeo-bRg.ttf</string>
-		<string>NanumSquareNeo-aLt.ttf</string>
-	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

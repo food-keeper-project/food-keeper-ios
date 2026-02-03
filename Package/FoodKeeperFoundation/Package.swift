@@ -44,6 +44,9 @@ let package = Package(
                 .product(name: "RxCocoa", package: "RxSwift"),
                 "SnapKit",
                 "Kingfisher",
+            ],
+            resources: [
+                .process("Resources")
             ]
         ),
     ]
