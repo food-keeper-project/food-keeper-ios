@@ -29,16 +29,16 @@ final class ExpiringFoodView: BaseView {
         $0.image = UIImage.colorAppLogo
     }
     
-    private let tableView = UITableView()
+    private let cv = UICollectionView()
 
-    // 🔥 외부에서 주입
+    // 외부에서 데이터 주입
     let foods = PublishRelay<[FoodResponse]>()
-    // 🔥 외부로 이벤트 전달
+    // 외부로 이벤트 전달
     let didSelectFood = PublishRelay<FoodResponse>()
 
     override func setUpLayout() {
-        addSubview(tableView)
-        [expiringInfo, warningImage, tableView].forEach { self.addSubview($0) }
+        addSubview(cv)
+        [expiringInfo, warningImage, cv].forEach { self.addSubview($0) }
         expiringInfo.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(33)
             make.leading.equalToSuperview().inset(20)
@@ -50,7 +50,7 @@ final class ExpiringFoodView: BaseView {
             make.size.equalTo(80)
         }
         
-        tableView.snp.makeConstraints { make in
+        cv.snp.makeConstraints { make in
             make.top.equalTo(expiringInfo.snp.bottom).offset(28)
             make.horizontalEdges.equalToSuperview()
             make.height.equalTo(90)
@@ -59,11 +59,8 @@ final class ExpiringFoodView: BaseView {
 
     override func setUpUI() {
         backgroundColor = .asMainOrange
-        tableView.backgroundColor = .clear
-        tableView.register(
-            ExpiringFoodCell.self,
-            forCellReuseIdentifier: ExpiringFoodCell.id
-        )
+        cv.backgroundColor = .clear
+        cv.register(ExpiringFoodCell.self, forCellWithReuseIdentifier: ExpiringFoodCell.id)
 
         bind()
     }
@@ -72,7 +69,7 @@ final class ExpiringFoodView: BaseView {
 
         // 데이터 바인딩
         foods
-            .bind(to: tableView.rx.items(
+            .bind(to: cv.rx.items(
                 cellIdentifier: ExpiringFoodCell.id,
                 cellType: ExpiringFoodCell.self
             )) { _, item, cell in
@@ -81,7 +78,7 @@ final class ExpiringFoodView: BaseView {
             .disposed(by: disposeBag)
 
         // 셀 선택 이벤트
-        tableView.rx.modelSelected(FoodResponse.self)
+        cv.rx.modelSelected(FoodResponse.self)
             .bind(to: didSelectFood)
             .disposed(by: disposeBag)
     }

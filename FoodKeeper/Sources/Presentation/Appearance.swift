@@ -26,7 +26,7 @@ enum Appearance {
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UINavigationBar.appearance().tintColor = .asForeground
         UINavigationBar.appearance().titleTextAttributes = [
-            .font: UIFont.asHeading,
+            .font: UIFont.as36Heading,
             .foregroundColor: UIColor.asForeground
         ]
     }

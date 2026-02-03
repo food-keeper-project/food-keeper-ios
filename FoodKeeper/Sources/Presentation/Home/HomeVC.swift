@@ -19,7 +19,7 @@ final class HomeVC: BaseVC {
     private let testLabel: UILabel = {
         let label = UILabel()
         label.text = "Hello World"
-        label.font = .asTitle26
+        label.font = .as26Title
         return label
     }()
     

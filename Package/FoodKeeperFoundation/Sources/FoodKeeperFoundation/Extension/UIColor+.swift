@@ -13,6 +13,7 @@ extension UIColor {
     public static let asMainOrange = UIColor(hex: "FF7F1E")
     public static let asAccentYellow = UIColor(hex: "FECE00")
     
+    public static let asWhite = UIColor(hex: "FBFBFB")
     public static let asBlack = UIColor(hex: "2F2F2F")
     public static let asGray1 = UIColor(hex: "A2A2A2")
     public static let asGray2 = UIColor(hex: "BBBBBB")

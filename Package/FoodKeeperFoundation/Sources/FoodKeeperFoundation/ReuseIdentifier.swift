@@ -8,11 +8,11 @@
 #if canImport(UIKit)
 import UIKit
 
-protocol ReuseIdentifiable {
+public protocol ReuseIdentifiable {
     static var id: String { get }
 }
 
-extension ReuseIdentifiable {
+public extension ReuseIdentifiable {
     static var id: String { String(describing: Self.self) }
 }
 

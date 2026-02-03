@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		060C1F4A2F2D1DFB00205145 /* LaunchAppName.png in Resources */ = {isa = PBXBuildFile; fileRef = 060C1F492F2D1DFB00205145 /* LaunchAppName.png */; };
 		060C1F4C2F2D1E4A00205145 /* LaunchAppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 060C1F4B2F2D1E4A00205145 /* LaunchAppLogo.png */; };
+		061FDE152F322B5A00950155 /* ExpiringFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061FDE142F322B5A00950155 /* ExpiringFoodView.swift */; };
+		061FDE172F322F7400950155 /* ExpiringFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061FDE162F322F7400950155 /* ExpiringFoodCell.swift */; };
 		06B970152F21058000DB6132 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970142F21058000DB6132 /* FoodKeeperFoundation */; };
 		06B970182F2105F400DB6132 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970172F2105F400DB6132 /* Data */; };
 		06B9701B2F21060100DB6132 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 06B9701A2F21060100DB6132 /* Domain */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		060C1F492F2D1DFB00205145 /* LaunchAppName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchAppName.png; sourceTree = "<group>"; };
 		060C1F4B2F2D1E4A00205145 /* LaunchAppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchAppLogo.png; sourceTree = "<group>"; };
+		061FDE142F322B5A00950155 /* ExpiringFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodView.swift; sourceTree = "<group>"; };
+		061FDE162F322F7400950155 /* ExpiringFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodCell.swift; sourceTree = "<group>"; };
 		06B970302F210C7B00DB6132 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		06B970312F210C8A00DB6132 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		06B9705B2F2796EE00DB6132 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
@@ -84,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		063CEA112F322A8E00CD7B5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				061FDE142F322B5A00950155 /* ExpiringFoodView.swift */,
+				061FDE162F322F7400950155 /* ExpiringFoodCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		06B9702B2F21069900DB6132 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +140,7 @@
 		06B970602F27B5FA00DB6132 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				063CEA112F322A8E00CD7B5C /* View */,
 				06B970612F27B6EF00DB6132 /* HomeVC.swift */,
 				06B970632F27B6F600DB6132 /* HomeVM.swift */,
 			);
@@ -267,10 +281,12 @@
 			files = (
 				06C294DC2F20F455006CF961 /* AppDelegate.swift in Sources */,
 				06B970622F27B6EF00DB6132 /* HomeVC.swift in Sources */,
+				061FDE152F322B5A00950155 /* ExpiringFoodView.swift in Sources */,
 				06C294DD2F20F455006CF961 /* SceneDelegate.swift in Sources */,
 				06B970642F27B6F600DB6132 /* HomeVM.swift in Sources */,
 				06B9705E2F27992800DB6132 /* TabBarController.swift in Sources */,
 				06B9705C2F2796EE00DB6132 /* Appearance.swift in Sources */,
+				061FDE172F322F7400950155 /* ExpiringFoodCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
