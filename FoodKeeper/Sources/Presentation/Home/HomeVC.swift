@@ -8,6 +8,7 @@
 import UIKit
 
 import FoodKeeperFoundation
+import Domain
 
 import SnapKit
 import Then
@@ -32,6 +33,7 @@ final class HomeVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bind()
     }
     
     override func viewDidLayoutSubviews() {
@@ -59,10 +61,9 @@ final class HomeVC: BaseVC {
             make.edges.equalToSuperview()
             make.width.equalToSuperview()
         }
-        
         expiringFoodView.snp.makeConstraints { make in
             make.top.horizontalEdges.equalToSuperview()
-            make.height.equalTo(300)
+            make.height.equalTo(270)
         }
         allFoodView.snp.makeConstraints { make in
             make.top.equalTo(expiringFoodView.snp.bottom)
@@ -73,6 +74,10 @@ final class HomeVC: BaseVC {
     override func setUpUI() {
         scrollView.backgroundColor = .blue
         contentView.backgroundColor = .red
+    }
+    private func bind() {
+        let data = FoodResponse.mockList
+        expiringFoodView.foods.accept(data)
     }
     
 }

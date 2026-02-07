@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum StorageMethod: String, CaseIterable {
+public enum StorageMethod: String, CaseIterable, Hashable {
     case roomTemp = "실온"
     case refrigerated = "냉장"
     case freezer = "냉동"

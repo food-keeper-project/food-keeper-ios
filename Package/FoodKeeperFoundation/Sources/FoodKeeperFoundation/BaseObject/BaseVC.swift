@@ -24,15 +24,15 @@ open class BaseVC: UIViewController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-        setUpUI()
         setUpLayout()
         setUpNavigation()
+        setUpUI()
         setUpDefaultUI()
     }
-    
-    open func setUpUI() { }
     open func setUpLayout() { }
     open func setUpNavigation() { }
+    open func setUpUI() { }
+    
     private func setUpDefaultUI() {
         view.backgroundColor = .asBackground
     }

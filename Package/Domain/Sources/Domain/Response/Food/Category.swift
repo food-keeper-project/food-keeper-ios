@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Category {
+public struct Category: Hashable {
     public let id: Int64
     public let name: String
     

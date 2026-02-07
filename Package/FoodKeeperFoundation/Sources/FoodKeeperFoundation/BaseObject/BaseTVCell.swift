@@ -14,8 +14,8 @@ open class BaseTVCell: UITableViewCell {
         reuseIdentifier: String?
     ) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setUpUI()
         setUpLayout()
+        setUpUI()
         setUpDefaultUI()
     }
     
@@ -24,8 +24,9 @@ open class BaseTVCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    open func setUpUI() { }
+    
     open func setUpLayout() { }
+    open func setUpUI() { }
     private func setUpDefaultUI() {
         selectionStyle = .none
     }
