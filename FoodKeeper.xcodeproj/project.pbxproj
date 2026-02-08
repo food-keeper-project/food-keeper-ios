@@ -13,6 +13,10 @@
 		0611CF972F3785D4005277DD /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611CF962F3785D4005277DD /* PaddingLabel.swift */; };
 		0611CF992F378D83005277DD /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611CF982F378D83005277DD /* NavView.swift */; };
 		0611CF9C2F379791005277DD /* CategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611CF9B2F379791005277DD /* CategoryCVCell.swift */; };
+		0611CF9F2F387669005277DD /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 0611CF9E2F387669005277DD /* Differentiator */; };
+		0611CFA12F387669005277DD /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 0611CFA02F387669005277DD /* RxDataSources */; };
+		0611CFA32F387861005277DD /* AllFoodTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611CFA22F387861005277DD /* AllFoodTVCell.swift */; };
+		0611CFA52F387883005277DD /* AllFoodSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611CFA42F387883005277DD /* AllFoodSectionHeaderView.swift */; };
 		061FDE152F322B5A00950155 /* ExpiringFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061FDE142F322B5A00950155 /* ExpiringFoodView.swift */; };
 		061FDE172F322F7400950155 /* ExpiringFoodCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061FDE162F322F7400950155 /* ExpiringFoodCVCell.swift */; };
 		06B970152F21058000DB6132 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970142F21058000DB6132 /* FoodKeeperFoundation */; };
@@ -50,6 +54,8 @@
 		0611CF962F3785D4005277DD /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		0611CF982F378D83005277DD /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		0611CF9B2F379791005277DD /* CategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVCell.swift; sourceTree = "<group>"; };
+		0611CFA22F387861005277DD /* AllFoodTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFoodTVCell.swift; sourceTree = "<group>"; };
+		0611CFA42F387883005277DD /* AllFoodSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFoodSectionHeaderView.swift; sourceTree = "<group>"; };
 		061FDE142F322B5A00950155 /* ExpiringFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodView.swift; sourceTree = "<group>"; };
 		061FDE162F322F7400950155 /* ExpiringFoodCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodCVCell.swift; sourceTree = "<group>"; };
 		06B970302F210C7B00DB6132 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -79,11 +85,13 @@
 				06C294E22F20F946006CF961 /* FoodKeeperFoundation in Frameworks */,
 				06B9703C2F2114B900DB6132 /* SnapKit in Frameworks */,
 				06B970242F21066600DB6132 /* Domain in Frameworks */,
+				0611CF9F2F387669005277DD /* Differentiator in Frameworks */,
 				06B970342F21130700DB6132 /* RxCocoa in Frameworks */,
 				06B970152F21058000DB6132 /* FoodKeeperFoundation in Frameworks */,
 				06B9701E2F21064200DB6132 /* Data in Frameworks */,
 				06B9701B2F21060100DB6132 /* Domain in Frameworks */,
 				06B970182F2105F400DB6132 /* Data in Frameworks */,
+				0611CFA12F387669005277DD /* RxDataSources in Frameworks */,
 				06B970272F21066E00DB6132 /* Data in Frameworks */,
 				06B970212F21064E00DB6132 /* FoodKeeperFoundation in Frameworks */,
 				06B9702A2F21067A00DB6132 /* FoodKeeperFoundation in Frameworks */,
@@ -109,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				0611CF9B2F379791005277DD /* CategoryCVCell.swift */,
+				0611CFA22F387861005277DD /* AllFoodTVCell.swift */,
+				0611CFA42F387883005277DD /* AllFoodSectionHeaderView.swift */,
 			);
 			path = AllFood;
 			sourceTree = "<group>";
@@ -246,6 +256,8 @@
 				06B970442F211B3600DB6132 /* Domain */,
 				06B970472F211B4C00DB6132 /* Data */,
 				06B970592F2796D600DB6132 /* Then */,
+				0611CF9E2F387669005277DD /* Differentiator */,
+				0611CFA02F387669005277DD /* RxDataSources */,
 			);
 			productName = FoodKeeper;
 			productReference = 06C294B62F20F43F006CF961 /* 키친로그(Dev).app */;
@@ -285,6 +297,7 @@
 				06B970462F211B4C00DB6132 /* XCLocalSwiftPackageReference "Package/Data" */,
 				06B970492F211B5700DB6132 /* XCLocalSwiftPackageReference "Package/FoodKeeperFoundation" */,
 				06B970582F2796D600DB6132 /* XCRemoteSwiftPackageReference "Then" */,
+				0611CF9D2F387669005277DD /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 06C294B72F20F43F006CF961 /* Products */;
@@ -325,6 +338,8 @@
 				0611CF972F3785D4005277DD /* PaddingLabel.swift in Sources */,
 				0611CF992F378D83005277DD /* NavView.swift in Sources */,
 				06B9705C2F2796EE00DB6132 /* Appearance.swift in Sources */,
+				0611CFA32F387861005277DD /* AllFoodTVCell.swift in Sources */,
+				0611CFA52F387883005277DD /* AllFoodSectionHeaderView.swift in Sources */,
 				061FDE172F322F7400950155 /* ExpiringFoodCVCell.swift in Sources */,
 				0611CF952F378249005277DD /* ExpiringInfoView.swift in Sources */,
 			);
@@ -580,6 +595,14 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0611CF9D2F387669005277DD /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
 		06B970322F21130700DB6132 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -631,6 +654,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0611CF9E2F387669005277DD /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0611CF9D2F387669005277DD /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		0611CFA02F387669005277DD /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0611CF9D2F387669005277DD /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
 		06B970142F21058000DB6132 /* FoodKeeperFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FoodKeeperFoundation;

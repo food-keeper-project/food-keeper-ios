@@ -30,15 +30,9 @@ final class ExpiringInfoView: BaseView {
         $0.textColor = .asWhite
         $0.numberOfLines = 2
     }
-    let expiringCount = PaddingLabel().then {
+    let expiringCount = InsetLabel().then {
+        $0.apply(style: .tag)
         $0.text = "0개"
-        $0.padding = .init(top: 4, left: 8, bottom: 4, right: 8)
-        $0.backgroundColor = .asWhite
-        $0.font = .as22TitleBold
-        $0.textColor = .asMainOrange
-        $0.numberOfLines = 2
-        $0.layer.masksToBounds = true
-        $0.layer.cornerRadius = 6
     }
     
     
