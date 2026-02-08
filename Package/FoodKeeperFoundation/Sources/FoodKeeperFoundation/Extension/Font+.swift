@@ -12,6 +12,7 @@ import CoreText
 extension UIFont {
 
     public static let as36Heading = UIFont.asFont(.nanumSquareNeoRegular, 36)
+    public static let as19ExtraLargeTitle = UIFont.asFont(.nanumSquareNeoExtraBold, 19)
 
     public static let as26Title = UIFont.asFont(.nanumSquareNeoRegular, 26)
     public static let as22Title = UIFont.asFont(.nanumSquareNeoRegular, 22)

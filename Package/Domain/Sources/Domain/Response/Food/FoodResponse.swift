@@ -16,7 +16,7 @@ public struct FoodResponse: Hashable {
     public let expiryDate: Date // 유통기한 만료일
     public let memo: String // 메모
     public let createdAt: Date // 생성일
-    public let categorys: [Category] //카테고리
+    public let categorys: [FoodCategory] //카테고리
     public let expiryAlarm: Int //알림일
 }
 
@@ -33,7 +33,7 @@ public extension FoodResponse {
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 4),
             memo: "샐러드용",
             createdAt: Date(),
-            categorys: [Category(id: 1, name: "채소")],
+            categorys: [FoodCategory(id: 1, name: "채소")],
             expiryAlarm: 3
         ),
         FoodResponse(
@@ -46,8 +46,8 @@ public extension FoodResponse {
             memo: "캠핑용",
             createdAt: Date(),
             categorys: [
-                Category(id: 1, name: "채소"),
-                Category(id: 5, name: "간편식")
+                FoodCategory(id: 1, name: "채소"),
+                FoodCategory(id: 5, name: "간편식")
             ],
             expiryAlarm: 5
         ),
@@ -60,7 +60,7 @@ public extension FoodResponse {
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 6),
             memo: "안심",
             createdAt: Date(),
-            categorys: [Category(id: 2, name: "육류")],
+            categorys: [FoodCategory(id: 2, name: "육류")],
             expiryAlarm: 2
         ),
         FoodResponse(
@@ -72,7 +72,7 @@ public extension FoodResponse {
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 7),
             memo: "",
             createdAt: Date(),
-            categorys: [Category(id: 1, name: "채소")],
+            categorys: [FoodCategory(id: 1, name: "채소")],
             expiryAlarm: 3
         ),
         FoodResponse(
@@ -84,7 +84,7 @@ public extension FoodResponse {
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 3),
             memo: "요거트 토핑",
             createdAt: Date(),
-            categorys: [Category(id: 3, name: "과일")],
+            categorys: [FoodCategory(id: 3, name: "과일")],
             expiryAlarm: 1
         ),
         FoodResponse(
@@ -96,7 +96,7 @@ public extension FoodResponse {
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 2),
             memo: "저지방",
             createdAt: Date(),
-            categorys: [Category(id: 4, name: "유제품")],
+            categorys: [FoodCategory(id: 4, name: "유제품")],
             expiryAlarm: 1
         ),
         FoodResponse(
@@ -108,7 +108,7 @@ public extension FoodResponse {
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 10),
             memo: "파스타용",
             createdAt: Date(),
-            categorys: [Category(id: 4, name: "유제품")],
+            categorys: [FoodCategory(id: 4, name: "유제품")],
             expiryAlarm: 4
         ),
         FoodResponse(
@@ -120,7 +120,7 @@ public extension FoodResponse {
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 14),
             memo: "운동 후",
             createdAt: Date(),
-            categorys: [Category(id: 2, name: "육류")],
+            categorys: [FoodCategory(id: 2, name: "육류")],
             expiryAlarm: 5
         ),
         FoodResponse(
@@ -132,7 +132,7 @@ public extension FoodResponse {
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 30),
             memo: "비상식량",
             createdAt: Date(),
-            categorys: [Category(id: 5, name: "간편식")],
+            categorys: [FoodCategory(id: 5, name: "간편식")],
             expiryAlarm: 7
         ),
         FoodResponse(
@@ -144,7 +144,7 @@ public extension FoodResponse {
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 8),
             memo: "아침용",
             createdAt: Date(),
-            categorys: [Category(id: 3, name: "과일")],
+            categorys: [FoodCategory(id: 3, name: "과일")],
             expiryAlarm: 3
         )
     ]

@@ -11,6 +11,8 @@
 		060C1F4C2F2D1E4A00205145 /* LaunchAppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 060C1F4B2F2D1E4A00205145 /* LaunchAppLogo.png */; };
 		0611CF952F378249005277DD /* ExpiringInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611CF942F378249005277DD /* ExpiringInfoView.swift */; };
 		0611CF972F3785D4005277DD /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611CF962F3785D4005277DD /* PaddingLabel.swift */; };
+		0611CF992F378D83005277DD /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611CF982F378D83005277DD /* NavView.swift */; };
+		0611CF9C2F379791005277DD /* CategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611CF9B2F379791005277DD /* CategoryCVCell.swift */; };
 		061FDE152F322B5A00950155 /* ExpiringFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061FDE142F322B5A00950155 /* ExpiringFoodView.swift */; };
 		061FDE172F322F7400950155 /* ExpiringFoodCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061FDE162F322F7400950155 /* ExpiringFoodCVCell.swift */; };
 		06B970152F21058000DB6132 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970142F21058000DB6132 /* FoodKeeperFoundation */; };
@@ -46,6 +48,8 @@
 		060C1F4B2F2D1E4A00205145 /* LaunchAppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchAppLogo.png; sourceTree = "<group>"; };
 		0611CF942F378249005277DD /* ExpiringInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringInfoView.swift; sourceTree = "<group>"; };
 		0611CF962F3785D4005277DD /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		0611CF982F378D83005277DD /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		0611CF9B2F379791005277DD /* CategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVCell.swift; sourceTree = "<group>"; };
 		061FDE142F322B5A00950155 /* ExpiringFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodView.swift; sourceTree = "<group>"; };
 		061FDE162F322F7400950155 /* ExpiringFoodCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodCVCell.swift; sourceTree = "<group>"; };
 		06B970302F210C7B00DB6132 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -96,8 +100,17 @@
 			isa = PBXGroup;
 			children = (
 				0611CF962F3785D4005277DD /* PaddingLabel.swift */,
+				0611CF982F378D83005277DD /* NavView.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		0611CF9A2F3796F5005277DD /* AllFood */ = {
+			isa = PBXGroup;
+			children = (
+				0611CF9B2F379791005277DD /* CategoryCVCell.swift */,
+			);
+			path = AllFood;
 			sourceTree = "<group>";
 		};
 		061FDE182F36F38400950155 /* ExpiringFood */ = {
@@ -113,6 +126,7 @@
 		063CEA112F322A8E00CD7B5C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0611CF9A2F3796F5005277DD /* AllFood */,
 				061FDE182F36F38400950155 /* ExpiringFood */,
 			);
 			path = View;
@@ -307,7 +321,9 @@
 				06C294DD2F20F455006CF961 /* SceneDelegate.swift in Sources */,
 				06B970642F27B6F600DB6132 /* HomeVM.swift in Sources */,
 				06B9705E2F27992800DB6132 /* TabBarController.swift in Sources */,
+				0611CF9C2F379791005277DD /* CategoryCVCell.swift in Sources */,
 				0611CF972F3785D4005277DD /* PaddingLabel.swift in Sources */,
+				0611CF992F378D83005277DD /* NavView.swift in Sources */,
 				06B9705C2F2796EE00DB6132 /* Appearance.swift in Sources */,
 				061FDE172F322F7400950155 /* ExpiringFoodCVCell.swift in Sources */,
 				0611CF952F378249005277DD /* ExpiringInfoView.swift in Sources */,

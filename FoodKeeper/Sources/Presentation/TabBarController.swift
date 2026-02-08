@@ -11,28 +11,39 @@ import FoodKeeperFoundation
 
 
 final class TabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewControllers = TabKind.makeViewControllers()
     }
-
+    
     enum TabKind: CaseIterable {
         case home
         case foodAdd
         case recipe
         case myPage
-
+        
         static func makeViewControllers() -> [UIViewController] {
             return allCases.map { tabKind in
                 let rootVC = tabKind.viewController
                 rootVC.tabBarItem = tabKind.tabBarItem
-
+                
+                let navTitleView = NavTitleView(
+                    image: .asColorAppLogo,
+                    title: Design.StringLiteral.appName
+                )
+                navTitleView.isUserInteractionEnabled = false
+                rootVC.navigationItem.title = ""
+                rootVC.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: navTitleView)
+                if #available(iOS 26.0, *) {
+                    rootVC.navigationItem.leftBarButtonItem?.hidesSharedBackground = true
+                    rootVC.navigationItem.rightBarButtonItem?.hidesSharedBackground = true
+                }
                 let nav = UINavigationController(rootViewController: rootVC)
                 return nav
             }
         }
-
+        
         // MARK: - ViewController
         private var viewController: UIViewController {
             let vc = UIViewController()
@@ -49,7 +60,7 @@ final class TabBarController: UITabBarController {
                 return vc
             }
         }
-
+        
         // MARK: - TabBarItem
         private var tabBarItem: UITabBarItem {
             UITabBarItem(
@@ -58,7 +69,7 @@ final class TabBarController: UITabBarController {
                 selectedImage: selectedImage
             )
         }
-
+        
         // MARK: - Title
         private var title: String {
             switch self {
@@ -72,7 +83,7 @@ final class TabBarController: UITabBarController {
                 return Design.StringLiteral.tabBarMyPage
             }
         }
-
+        
         // MARK: - Images
         private var image: UIImage? {
             switch self {
@@ -86,7 +97,7 @@ final class TabBarController: UITabBarController {
                 return .asUserCircle
             }
         }
-
+        
         private var selectedImage: UIImage? {
             switch self {
             case .home:
