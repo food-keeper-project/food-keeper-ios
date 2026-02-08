@@ -12,19 +12,19 @@ import Then
 
 final class AllFoodSectionHeaderView: UITableViewHeaderFooterView {
     private let createDateLabel = UILabel().then {
-        $0.font = .as10CaptionBold
+        $0.font = .as12CaptionBold
         $0.textColor = .black
         $0.textAlignment = .left
         $0.numberOfLines = 1
     }
     private let bottomLine = UIView().then {
-        $0.backgroundColor = .asBlack
+        $0.backgroundColor = .asGray2
     }
 
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         
-        contentView.backgroundColor = .asBackground
+        contentView.backgroundColor = .asWhite
         [createDateLabel, bottomLine].forEach { contentView.addSubview($0)}
         
         createDateLabel.snp.makeConstraints { make in
@@ -40,7 +40,7 @@ final class AllFoodSectionHeaderView: UITableViewHeaderFooterView {
     
     required init?(coder: NSCoder) { fatalError() }
 
-    func configure(_ createDate: String) {
-        createDateLabel.text = createDate
+    func setUp(title: String) {
+        createDateLabel.text = title
     }
 }

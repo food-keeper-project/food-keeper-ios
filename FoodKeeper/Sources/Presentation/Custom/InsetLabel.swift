@@ -1,5 +1,5 @@
 //
-//  PaddingLabel.swift
+//  InsetLabel.swift
 //  FoodKeeper
 //
 //  Created by 박성민 on 2/7/26.
@@ -80,21 +80,21 @@ extension InsetLabel {
             cornerRadius = 4
             backgroundColor = .asMainOrange
             textColor = .asWhite
-            font = .as12CaptionBold
+            font = .as12CaptionExtraBold
 
         case .tag:
             contentInsets = UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 6)
             cornerRadius = 6
             backgroundColor = .asWhite
             textColor = .asMainOrange
-            font = .as19ExtraLargeTitle
+            font = .as19TitleExtraBold
 
         case .epiringBadge:
             contentInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
             cornerRadius = 9
             backgroundColor = .asAccentYellow
             textColor = .asBlack
-            font = .as10Caption
+            font = .as10CaptionBold
         }
     }
 }

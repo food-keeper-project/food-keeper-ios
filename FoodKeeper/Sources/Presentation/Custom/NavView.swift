@@ -30,7 +30,7 @@ final class NavTitleView: UIView {
         iconImageView.tintColor = .asMainOrange
 
         titleLabel.text = title
-        titleLabel.font = .as19ExtraLargeTitle
+        titleLabel.font = .as19TitleExtraBold
         titleLabel.textColor = .asMainOrange
 
         let stack = UIStackView(arrangedSubviews: [iconImageView, titleLabel])

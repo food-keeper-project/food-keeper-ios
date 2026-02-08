@@ -11,27 +11,42 @@ import CoreText
 
 extension UIFont {
 
+    // MARK: - Heading
     public static let as36Heading = UIFont.asFont(.nanumSquareNeoRegular, 36)
-    public static let as19ExtraLargeTitle = UIFont.asFont(.nanumSquareNeoExtraBold, 19)
 
+    // MARK: - Title
     public static let as26Title = UIFont.asFont(.nanumSquareNeoRegular, 26)
     public static let as22Title = UIFont.asFont(.nanumSquareNeoRegular, 22)
     public static let as19Title = UIFont.asFont(.nanumSquareNeoRegular, 19)
+
     public static let as26TitleBold = UIFont.asFont(.nanumSquareNeoBold, 26)
     public static let as22TitleBold = UIFont.asFont(.nanumSquareNeoBold, 22)
     public static let as19TitleBold = UIFont.asFont(.nanumSquareNeoBold, 19)
-    
+
+    public static let as26TitleExtraBold = UIFont.asFont(.nanumSquareNeoExtraBold, 26)
+    public static let as22TitleExtraBold = UIFont.asFont(.nanumSquareNeoExtraBold, 22)
+    public static let as19TitleExtraBold = UIFont.asFont(.nanumSquareNeoExtraBold, 19)
+
+    // MARK: - Body
     public static let as16Body = UIFont.asFont(.nanumSquareNeoRegular, 16)
     public static let as14Body = UIFont.asFont(.nanumSquareNeoRegular, 14)
+
     public static let as16BodyBold = UIFont.asFont(.nanumSquareNeoBold, 16)
     public static let as14BodyBold = UIFont.asFont(.nanumSquareNeoBold, 14)
-    
+
+    public static let as16BodyExtraBold = UIFont.asFont(.nanumSquareNeoExtraBold, 16)
+    public static let as14BodyExtraBold = UIFont.asFont(.nanumSquareNeoExtraBold, 14)
+
+    // MARK: - Caption
     public static let as12Caption = UIFont.asFont(.nanumSquareNeoRegular, 12)
     public static let as10Caption = UIFont.asFont(.nanumSquareNeoRegular, 10)
+
     public static let as12CaptionBold = UIFont.asFont(.nanumSquareNeoBold, 12)
     public static let as10CaptionBold = UIFont.asFont(.nanumSquareNeoBold, 10)
-}
 
+    public static let as12CaptionExtraBold = UIFont.asFont(.nanumSquareNeoExtraBold, 12)
+    public static let as10CaptionExtraBold = UIFont.asFont(.nanumSquareNeoExtraBold, 10)
+}
 enum CustomFontName: String {
     case nanumSquareNeoLight      = "NanumSquareNeoTTF-aLt"
     case nanumSquareNeoRegular   = "NanumSquareNeoTTF-bRg"

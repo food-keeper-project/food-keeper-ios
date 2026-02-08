@@ -32,7 +32,7 @@ public extension FoodResponse {
             storageMethod: .refrigerated,
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 4),
             memo: "샐러드용",
-            createdAt: Date(),
+            createdAt: Date().addingTimeInterval(60 * 60 * 24 * 4),
             categorys: [FoodCategory(id: 1, name: "채소")],
             expiryAlarm: 3
         ),
@@ -59,7 +59,7 @@ public extension FoodResponse {
             storageMethod: .freezer,
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 6),
             memo: "안심",
-            createdAt: Date(),
+            createdAt: Date().addingTimeInterval(60 * 60 * 24 * 6),
             categorys: [FoodCategory(id: 2, name: "육류")],
             expiryAlarm: 2
         ),
@@ -83,7 +83,7 @@ public extension FoodResponse {
             storageMethod: .refrigerated,
             expiryDate: Date().addingTimeInterval(60 * 60 * 24 * 3),
             memo: "요거트 토핑",
-            createdAt: Date(),
+            createdAt: Date().addingTimeInterval(60 * 60 * 24 * 3),
             categorys: [FoodCategory(id: 3, name: "과일")],
             expiryAlarm: 1
         ),
