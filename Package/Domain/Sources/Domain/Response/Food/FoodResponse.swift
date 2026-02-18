@@ -23,7 +23,7 @@ public struct FoodResponse: Hashable {
 // 목업
 public extension FoodResponse {
 
-    @MainActor static let mockList: [FoodResponse] = [
+    nonisolated(unsafe) static let mockList: [FoodResponse] = [
         FoodResponse(
             id: 1,
             name: "파프리카",

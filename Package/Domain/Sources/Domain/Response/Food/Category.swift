@@ -19,7 +19,7 @@ public struct FoodCategory: Hashable {
 
 // 목업
 public extension FoodCategory {
-    @MainActor static let mockList: [FoodCategory] = [
+    nonisolated(unsafe) static let mockList: [FoodCategory] = [
         FoodCategory(id: 1, name: "야채류"),
         FoodCategory(id: 2, name: "과일류"),
         FoodCategory(id: 3, name: "육류"),
