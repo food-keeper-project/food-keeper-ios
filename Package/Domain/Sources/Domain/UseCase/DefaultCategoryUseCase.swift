@@ -10,6 +10,8 @@ import FoodKeeperFoundation
 import RxSwift
 
 public final class DefaultCategoryUseCase: CategoryUseCase {
+    public init() { }
+    
     public func fetchCategorys() -> Single<[FoodCategory]> {
         let mock = FoodCategory.mockList
         

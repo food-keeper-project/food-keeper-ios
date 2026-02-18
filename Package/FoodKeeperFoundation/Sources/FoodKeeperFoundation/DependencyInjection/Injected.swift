@@ -9,10 +9,9 @@ import Foundation
 
 @propertyWrapper
 public struct Injected<T> {
-    
     public var wrappedValue: T {
-        DIContainer.shared.resolve(T.self)
+        DIContainer.resolve(type: T.self)
     }
     
-    public init() {}
+    public init() { }
 }

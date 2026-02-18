@@ -10,6 +10,8 @@ import FoodKeeperFoundation
 import RxSwift
 
 public final class DefaultFoodUseCase: FoodUseCase {
+    public init() { }
+    
     public func fetchExpiringFoods() -> Single<[FoodResponse]> {
         let mock = FoodResponse.mockList
         

@@ -20,6 +20,7 @@
 		0611CFA72F3898A1005277DD /* AllFoodSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611CFA62F3898A1005277DD /* AllFoodSection.swift */; };
 		061FDE152F322B5A00950155 /* ExpiringFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061FDE142F322B5A00950155 /* ExpiringFoodView.swift */; };
 		061FDE172F322F7400950155 /* ExpiringFoodCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061FDE162F322F7400950155 /* ExpiringFoodCVCell.swift */; };
+		0671306A2F45DA42001F2C36 /* AppDelegate+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067130692F45DA42001F2C36 /* AppDelegate+Register.swift */; };
 		06B970152F21058000DB6132 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970142F21058000DB6132 /* FoodKeeperFoundation */; };
 		06B970182F2105F400DB6132 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970172F2105F400DB6132 /* Data */; };
 		06B9701B2F21060100DB6132 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 06B9701A2F21060100DB6132 /* Domain */; };
@@ -60,6 +61,7 @@
 		0611CFA62F3898A1005277DD /* AllFoodSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFoodSection.swift; sourceTree = "<group>"; };
 		061FDE142F322B5A00950155 /* ExpiringFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodView.swift; sourceTree = "<group>"; };
 		061FDE162F322F7400950155 /* ExpiringFoodCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodCVCell.swift; sourceTree = "<group>"; };
+		067130692F45DA42001F2C36 /* AppDelegate+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Register.swift"; sourceTree = "<group>"; };
 		06B970302F210C7B00DB6132 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		06B970312F210C8A00DB6132 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		06B9705B2F2796EE00DB6132 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				06C294CE2F20F455006CF961 /* AppDelegate.swift */,
 				06C294D52F20F455006CF961 /* SceneDelegate.swift */,
+				067130692F45DA42001F2C36 /* AppDelegate+Register.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06C294DC2F20F455006CF961 /* AppDelegate.swift in Sources */,
+				0671306A2F45DA42001F2C36 /* AppDelegate+Register.swift in Sources */,
 				06B970622F27B6EF00DB6132 /* HomeVC.swift in Sources */,
 				061FDE152F322B5A00950155 /* ExpiringFoodView.swift in Sources */,
 				0611CFA72F3898A1005277DD /* AllFoodSection.swift in Sources */,
