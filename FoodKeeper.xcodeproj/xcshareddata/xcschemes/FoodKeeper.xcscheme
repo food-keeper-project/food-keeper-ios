@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "06C294B52F20F43F006CF961"
-               BuildableName = "&#x110f;&#x1175;&#x110e;&#x1175;&#x11ab;&#x1105;&#x1169;&#x1100;&#x1173;.app"
+               BuildableName = "&#x110f;&#x1175;&#x110e;&#x1175;&#x11ab;&#x1105;&#x1169;&#x1100;&#x1173;(Dev).app"
                BlueprintName = "FoodKeeper"
                ReferencedContainer = "container:FoodKeeper.xcodeproj">
             </BuildableReference>
@@ -29,6 +29,19 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "067130722F472C76001F2C36"
+               BuildableName = "&#x110f;&#x1175;&#x110e;&#x1175;&#x11ab;&#x1105;&#x1169;&#x1100;&#x1173;(Dev)Tests.xctest"
+               BlueprintName = "&#xd0a4;&#xce5c;&#xb85c;&#xadf8;(Dev)Tests"
+               ReferencedContainer = "container:FoodKeeper.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -45,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "06C294B52F20F43F006CF961"
-            BuildableName = "&#x110f;&#x1175;&#x110e;&#x1175;&#x11ab;&#x1105;&#x1169;&#x1100;&#x1173;.app"
+            BuildableName = "&#x110f;&#x1175;&#x110e;&#x1175;&#x11ab;&#x1105;&#x1169;&#x1100;&#x1173;(Dev).app"
             BlueprintName = "FoodKeeper"
             ReferencedContainer = "container:FoodKeeper.xcodeproj">
          </BuildableReference>
@@ -62,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "06C294B52F20F43F006CF961"
-            BuildableName = "&#x110f;&#x1175;&#x110e;&#x1175;&#x11ab;&#x1105;&#x1169;&#x1100;&#x1173;.app"
+            BuildableName = "&#x110f;&#x1175;&#x110e;&#x1175;&#x11ab;&#x1105;&#x1169;&#x1100;&#x1173;(Dev).app"
             BlueprintName = "FoodKeeper"
             ReferencedContainer = "container:FoodKeeper.xcodeproj">
          </BuildableReference>

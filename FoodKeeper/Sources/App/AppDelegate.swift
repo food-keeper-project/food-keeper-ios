@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Appearance.setUpCommonUI()
         UIFont.registerFonts()
+        registerDependency()
         print("앱실행")
         return true
     }

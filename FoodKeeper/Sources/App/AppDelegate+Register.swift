@@ -14,14 +14,18 @@ extension AppDelegate {
     func registerDependency() {
 
         #if FAKE
+        print("FAKE")
         // MARK: - UseCase
-        DIContainer.register(DefaultFoodUseCase(), type: FoodUseCase.self)
-        DIContainer.register(DefaultCategoryUseCase(), type: CategoryUseCase.self)
+        DIContainer.register(MockFoodUseCase(), type: FoodUseCase.self)
+        DIContainer.register(MockCategoryUseCase(), type: CategoryUseCase.self)
         
         #else
+        print("DEBUG")
+        // MARK: - UseCase
         DIContainer.register(DefaultFoodUseCase(), type: FoodUseCase.self)
         DIContainer.register(DefaultCategoryUseCase(), type: CategoryUseCase.self)
         #endif
         
     }
 }
+
