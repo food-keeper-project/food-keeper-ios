@@ -15,7 +15,10 @@ import Then
 import RxSwift
 import RxCocoa
 import RxDataSources
-
+struct CategorySectionItem {
+    let category: FoodCategory
+    let isSelected: Bool
+}
 final class HomeVC: BaseVC {
     private let vm = HomeVM()
     private var isSyncingScroll = false
@@ -192,26 +195,58 @@ final class HomeVC: BaseVC {
     }
     
     private func bind() {
-        let input = HomeVM.Input(viewWillAppearEvent: viewWillAppearEvent)
+        let categorySelection = Observable.merge(
+            stickyHeaderView.rx.modelSelected(CategorySectionItem.self).map{$0.category}.asObservable(),
+            categoryListCV.rx.modelSelected(CategorySectionItem.self).map{$0.category}.asObservable()
+        )
+        
+        let input = HomeVM.Input(
+            viewWillAppearEvent: viewWillAppearEvent,
+            changeSelectedCategory: categorySelection
+        )
+        
         let output = vm.transform(input: input)
         
+        // 유통기한 임박 식품
         output.expiringFoods
+            .observe(on: MainScheduler.instance)
             .bind(to: expiringFoodView.foods)
             .disposed(by: disposeBag)
         
-        output.categorys
-            .bind(to: stickyHeaderView.rx.items(cellIdentifier: CategoryCVCell.id, cellType: CategoryCVCell.self)) { _, category, cell in
-                cell.setUpData(data: category)
+        let categoryCellModels = Observable.combineLatest(
+                output.categorys,
+                output.selectedCategory
+            )
+            .map { (categories, selected) -> [CategorySectionItem] in
+                return categories.map { category in
+                    return CategorySectionItem(category: category, isSelected: category.id == selected.id)
+                }
             }
-            .disposed(by: disposeBag)
+            .share(replay: 1)
+
+        categoryCellModels
+                .observe(on: MainScheduler.instance)
+                .bind(to: stickyHeaderView.rx.items(
+                    cellIdentifier: CategoryCVCell.id,
+                    cellType: CategoryCVCell.self
+                )) { index, model, cell in
+                    cell.setUpData(data: model.category, isSelected: model.isSelected)
+                }
+                .disposed(by: disposeBag)
+
+            categoryCellModels
+                .observe(on: MainScheduler.instance)
+                .bind(to: categoryListCV.rx.items(
+                    cellIdentifier: CategoryCVCell.id,
+                    cellType: CategoryCVCell.self
+                )) { index, model, cell in
+                    cell.setUpData(data: model.category, isSelected: model.isSelected)
+                }
+                .disposed(by: disposeBag)
         
-        output.categorys
-            .bind(to: categoryListCV.rx.items(cellIdentifier: CategoryCVCell.id, cellType: CategoryCVCell.self)) { _, category, cell in
-                cell.setUpData(data: category)
-            }
-            .disposed(by: disposeBag)
-        
+        // 전체 식품 리스트
         output.allFoods
+            .observe(on: MainScheduler.instance)
             .map { foods -> [AllFoodSection] in
                 let grouped = Dictionary(grouping: foods) {
                     $0.createdAt.toyyMMddString()

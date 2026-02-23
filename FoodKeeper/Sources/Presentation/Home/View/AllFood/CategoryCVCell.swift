@@ -47,10 +47,17 @@ final class CategoryCVCell: BaseCVCell {
     }
     
     override func setUpUI() {
-        contentView.backgroundColor = .asGray3
+        contentView.backgroundColor = .asGray6
     }
     
-    func setUpData(data: FoodCategory) {
+    func setUpData(data: FoodCategory, isSelected: Bool) {
+        if isSelected {
+            nameLabel.textColor = .asWhite
+            contentView.backgroundColor = .asMainOrange
+        } else {
+            nameLabel.textColor = .asBlack
+            contentView.backgroundColor = .asGray6
+        }
         nameLabel.text = data.name
     }
     

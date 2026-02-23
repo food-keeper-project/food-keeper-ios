@@ -20,6 +20,7 @@ extension UIColor {
     public static let asGray3 = UIColor(hex: "D7D7D7")
     public static let asGray4 = UIColor(hex: "DEDEDE")
     public static let asGray5 = UIColor(hex: "F5F5F5")
+    public static let asGray6 = UIColor(hex: "EAEAEA")
 }
 
 extension UIColor {
