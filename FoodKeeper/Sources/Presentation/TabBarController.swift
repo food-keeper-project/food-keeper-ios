@@ -46,18 +46,15 @@ final class TabBarController: UITabBarController {
         
         // MARK: - ViewController
         private var viewController: UIViewController {
-            let vc = UIViewController()
-            vc.view.backgroundColor = .asBackground
-            vc.title = title
             switch self {
             case .home:
                 return HomeVC()
             case .foodAdd:
-                return vc
+                return AddFoodVC()
             case .recipe:
-                return vc
+                return RecipeVC()
             case .myPage:
-                return vc
+                return MyPageVC()
             }
         }
         

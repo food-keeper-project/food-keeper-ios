@@ -15,10 +15,7 @@ import Then
 import RxSwift
 import RxCocoa
 import RxDataSources
-struct CategorySectionItem {
-    let category: FoodCategory
-    let isSelected: Bool
-}
+
 final class HomeVC: BaseVC {
     private let vm = HomeVM()
     private var isSyncingScroll = false

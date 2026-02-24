@@ -21,6 +21,12 @@
 		061FDE152F322B5A00950155 /* ExpiringFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061FDE142F322B5A00950155 /* ExpiringFoodView.swift */; };
 		061FDE172F322F7400950155 /* ExpiringFoodCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061FDE162F322F7400950155 /* ExpiringFoodCVCell.swift */; };
 		0671306A2F45DA42001F2C36 /* AppDelegate+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067130692F45DA42001F2C36 /* AppDelegate+Register.swift */; };
+		0671307F2F4DC4A6001F2C36 /* AddFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671307E2F4DC4A6001F2C36 /* AddFoodVC.swift */; };
+		067130812F4DC4B1001F2C36 /* AddFoodVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067130802F4DC4B1001F2C36 /* AddFoodVM.swift */; };
+		067130872F4DC776001F2C36 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067130862F4DC776001F2C36 /* MyPageVC.swift */; };
+		067130892F4DC77B001F2C36 /* MyPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067130882F4DC77B001F2C36 /* MyPageVM.swift */; };
+		0671308B2F4DC785001F2C36 /* RecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671308A2F4DC785001F2C36 /* RecipeVC.swift */; };
+		0671308D2F4DC789001F2C36 /* RecipeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671308C2F4DC789001F2C36 /* RecipeVM.swift */; };
 		06B970152F21058000DB6132 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970142F21058000DB6132 /* FoodKeeperFoundation */; };
 		06B970182F2105F400DB6132 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 06B970172F2105F400DB6132 /* Data */; };
 		06B9701B2F21060100DB6132 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 06B9701A2F21060100DB6132 /* Domain */; };
@@ -73,6 +79,12 @@
 		061FDE162F322F7400950155 /* ExpiringFoodCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodCVCell.swift; sourceTree = "<group>"; };
 		067130692F45DA42001F2C36 /* AppDelegate+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Register.swift"; sourceTree = "<group>"; };
 		067130732F472C76001F2C36 /* 키친로그(Dev)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "키친로그(Dev)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0671307E2F4DC4A6001F2C36 /* AddFoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodVC.swift; sourceTree = "<group>"; };
+		067130802F4DC4B1001F2C36 /* AddFoodVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodVM.swift; sourceTree = "<group>"; };
+		067130862F4DC776001F2C36 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
+		067130882F4DC77B001F2C36 /* MyPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVM.swift; sourceTree = "<group>"; };
+		0671308A2F4DC785001F2C36 /* RecipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeVC.swift; sourceTree = "<group>"; };
+		0671308C2F4DC789001F2C36 /* RecipeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeVM.swift; sourceTree = "<group>"; };
 		06B970302F210C7B00DB6132 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		06B970312F210C8A00DB6132 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		06B9705B2F2796EE00DB6132 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
@@ -165,6 +177,33 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0671307D2F4DC460001F2C36 /* AddFood */ = {
+			isa = PBXGroup;
+			children = (
+				0671307E2F4DC4A6001F2C36 /* AddFoodVC.swift */,
+				067130802F4DC4B1001F2C36 /* AddFoodVM.swift */,
+			);
+			path = AddFood;
+			sourceTree = "<group>";
+		};
+		067130822F4DC75D001F2C36 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				0671308A2F4DC785001F2C36 /* RecipeVC.swift */,
+				0671308C2F4DC789001F2C36 /* RecipeVM.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		067130832F4DC764001F2C36 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				067130862F4DC776001F2C36 /* MyPageVC.swift */,
+				067130882F4DC77B001F2C36 /* MyPageVM.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		06B9702B2F21069900DB6132 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +238,9 @@
 		06B9702E2F2106D900DB6132 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				067130832F4DC764001F2C36 /* MyPage */,
+				067130822F4DC75D001F2C36 /* Recipe */,
+				0671307D2F4DC460001F2C36 /* AddFood */,
 				0611CF912F37486F005277DD /* Custom */,
 				06B970602F27B5FA00DB6132 /* Home */,
 				06B9705B2F2796EE00DB6132 /* Appearance.swift */,
@@ -392,11 +434,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0671308D2F4DC789001F2C36 /* RecipeVM.swift in Sources */,
 				06C294DC2F20F455006CF961 /* AppDelegate.swift in Sources */,
 				0671306A2F45DA42001F2C36 /* AppDelegate+Register.swift in Sources */,
 				06B970622F27B6EF00DB6132 /* HomeVC.swift in Sources */,
 				061FDE152F322B5A00950155 /* ExpiringFoodView.swift in Sources */,
+				0671307F2F4DC4A6001F2C36 /* AddFoodVC.swift in Sources */,
 				0611CFA72F3898A1005277DD /* AllFoodSection.swift in Sources */,
+				0671308B2F4DC785001F2C36 /* RecipeVC.swift in Sources */,
+				067130872F4DC776001F2C36 /* MyPageVC.swift in Sources */,
+				067130892F4DC77B001F2C36 /* MyPageVM.swift in Sources */,
 				06C294DD2F20F455006CF961 /* SceneDelegate.swift in Sources */,
 				06B970642F27B6F600DB6132 /* HomeVM.swift in Sources */,
 				06B9705E2F27992800DB6132 /* TabBarController.swift in Sources */,
@@ -407,6 +454,7 @@
 				0611CFA32F387861005277DD /* AllFoodTVCell.swift in Sources */,
 				0611CFA52F387883005277DD /* AllFoodSectionHeaderView.swift in Sources */,
 				061FDE172F322F7400950155 /* ExpiringFoodCVCell.swift in Sources */,
+				067130812F4DC4B1001F2C36 /* AddFoodVM.swift in Sources */,
 				0611CF952F378249005277DD /* ExpiringInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
