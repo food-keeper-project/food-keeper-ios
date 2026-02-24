@@ -26,6 +26,7 @@ final class CategoryCVCell: BaseCVCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         disposeBag = DisposeBag()
+        updateSelectionUI(isSelected: false)
     }
     
     override func layoutSubviews() {
@@ -36,10 +37,6 @@ final class CategoryCVCell: BaseCVCell {
     
     override func setUpLayout() {
         [nameLabel].forEach { contentView.addSubview($0) }
-        contentView.translatesAutoresizingMaskIntoConstraints = true
-        contentView.snp.makeConstraints { make in
-            make.height.equalTo(30)
-        }
         nameLabel.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.horizontalEdges.equalToSuperview().inset(16)
@@ -50,7 +47,11 @@ final class CategoryCVCell: BaseCVCell {
         contentView.backgroundColor = .asGray6
     }
     
-    func setUpData(data: FoodCategory, isSelected: Bool) {
+    func setUpData(with model: CategorySectionItem) {
+        updateSelectionUI(isSelected: model.isSelected)
+        nameLabel.text = model.category.name
+    }
+    private func updateSelectionUI(isSelected: Bool) {
         if isSelected {
             nameLabel.textColor = .asWhite
             contentView.backgroundColor = .asMainOrange
@@ -58,7 +59,6 @@ final class CategoryCVCell: BaseCVCell {
             nameLabel.textColor = .asBlack
             contentView.backgroundColor = .asGray6
         }
-        nameLabel.text = data.name
     }
     
 }

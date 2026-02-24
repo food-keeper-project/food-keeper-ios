@@ -66,8 +66,7 @@ final class HomeVM: BaseVM {
             .disposed(by: disposeBag)
         //카테고리 클릭 이벤트
         input.changeSelectedCategory
-            .throttle(.seconds(1), scheduler: MainScheduler.instance)
-            .distinctUntilChanged()
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
             .bind(with: self, onNext: { owner, item in
                 output.selectedCategory.onNext(item)
                 if item == self.allCategory {

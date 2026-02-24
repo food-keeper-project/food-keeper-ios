@@ -22,6 +22,7 @@ final class ExpiringFoodCVCell: BaseCVCell {
         $0.contentMode = .scaleAspectFit
         $0.backgroundColor = .asWhite
         $0.clipsToBounds = true
+        $0.layer.cornerRadius = 15
     }
     private let nameLabel = UILabel().then {
         $0.font = .as16BodyBold
@@ -43,15 +44,11 @@ final class ExpiringFoodCVCell: BaseCVCell {
         super.layoutSubviews()
         contentView.clipsToBounds = true
         contentView.layer.cornerRadius = contentView.bounds.height / 2
-        foodImageView.layer.cornerRadius = foodImageView.bounds.width / 2
     }
     
     override func setUpLayout() {
         [foodImageView, nameLabel, expiryLabel].forEach { contentView.addSubview($0) }
-        contentView.translatesAutoresizingMaskIntoConstraints = true
-        contentView.snp.makeConstraints { make in
-            make.height.equalTo(40)
-        }
+        
         foodImageView.snp.makeConstraints { make in
             make.leading.equalToSuperview().inset(6)
             make.centerY.equalToSuperview()

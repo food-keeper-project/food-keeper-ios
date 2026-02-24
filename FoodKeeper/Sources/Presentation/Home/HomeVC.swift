@@ -48,7 +48,8 @@ final class HomeVC: BaseVC {
     private lazy var stickyHeaderView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        layout.itemSize = UICollectionViewFlowLayout.automaticSize
+        layout.estimatedItemSize = CGSize(width: 500, height: 30)
         layout.minimumLineSpacing = 8
         
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -62,7 +63,8 @@ final class HomeVC: BaseVC {
     private lazy var categoryListCV: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        layout.itemSize = UICollectionViewFlowLayout.automaticSize
+        layout.estimatedItemSize = CGSize(width: 500, height: 30)
         layout.minimumLineSpacing = 8
         
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -213,34 +215,40 @@ final class HomeVC: BaseVC {
             .bind(to: expiringFoodView.foods)
             .disposed(by: disposeBag)
         
-        let categoryCellModels = Observable.combineLatest(
+        // 카테고리 리스트 + 선택 상태를 결합한 모델 스트림
+            let categoryModels = Observable.combineLatest(
                 output.categorys,
                 output.selectedCategory
             )
-            .map { (categories, selected) -> [CategorySectionItem] in
+            .map { categories, selected -> [CategorySectionItem] in
                 return categories.map { category in
-                    return CategorySectionItem(category: category, isSelected: category.id == selected.id)
+                    CategorySectionItem(
+                        category: category,
+                        isSelected: category.id == selected.id
+                    )
                 }
             }
-            .share(replay: 1)
+            .share(replay: 1)  // 여러 구독자 공유 + 재구독 시 캐시
 
-        categoryCellModels
+            // stickyHeaderView 바인딩 (한 번만!)
+            categoryModels
                 .observe(on: MainScheduler.instance)
                 .bind(to: stickyHeaderView.rx.items(
                     cellIdentifier: CategoryCVCell.id,
                     cellType: CategoryCVCell.self
-                )) { index, model, cell in
-                    cell.setUpData(data: model.category, isSelected: model.isSelected)
+                )) { _, model, cell in
+                    cell.setUpData(with: model)  // ← setUpData 대신 configure 메서드 추천
                 }
                 .disposed(by: disposeBag)
 
-            categoryCellModels
+            // categoryListCV 바인딩 (동일한 스트림 재사용)
+            categoryModels
                 .observe(on: MainScheduler.instance)
                 .bind(to: categoryListCV.rx.items(
                     cellIdentifier: CategoryCVCell.id,
                     cellType: CategoryCVCell.self
-                )) { index, model, cell in
-                    cell.setUpData(data: model.category, isSelected: model.isSelected)
+                )) { _, model, cell in
+                    cell.setUpData(with: model)
                 }
                 .disposed(by: disposeBag)
         

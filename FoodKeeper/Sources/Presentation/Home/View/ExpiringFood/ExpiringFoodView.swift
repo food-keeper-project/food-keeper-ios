@@ -28,7 +28,8 @@ final class ExpiringFoodView: BaseView {
         let layout = UICollectionViewFlowLayout()
         
         layout.scrollDirection = .horizontal
-        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        layout.itemSize = UICollectionViewFlowLayout.automaticSize
+        layout.estimatedItemSize = CGSize(width: Int.max, height: 40)
         layout.minimumInteritemSpacing = 12 //세로 셀 간격
         layout.minimumLineSpacing = 8 //가로 셀 간격
         
@@ -44,7 +45,8 @@ final class ExpiringFoodView: BaseView {
         let layout = UICollectionViewFlowLayout()
         
         layout.scrollDirection = .horizontal
-        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        layout.itemSize = UICollectionViewFlowLayout.automaticSize
+        layout.estimatedItemSize = CGSize(width: Int.max, height: 40)
         layout.minimumInteritemSpacing = 12 //세로 셀 간격
         layout.minimumLineSpacing = 8 //가로 셀 간격
         
