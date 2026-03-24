@@ -19,5 +19,7 @@ extension UIImage {
     public static let asUserCircle = UIImage(named: "UserCircle")
     public static let asDanger = UIImage(named: "DangerTriangle")
     
+    public static let asXmark = UIImage(named: "CloseCircle")
+    
 }
 #endif

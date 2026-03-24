@@ -16,7 +16,6 @@ import RxCocoa
 import Domain
 
 final class ExpiringFoodView: BaseView {
-    private let disposeBag = DisposeBag()
     private var isSyncingScroll = false
     private let expiringInfo = ExpiringInfoView()
     private let warningImage = UIImageView().then {
