@@ -33,11 +33,11 @@ enum Appearance {
     private static func setUpTabBarUI() {
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .asForeground
+        appearance.backgroundColor = .asBackground
         appearance.shadowColor = UIColor.clear
 
         UITabBar.appearance().standardAppearance = appearance
         UITabBar.appearance().scrollEdgeAppearance = appearance
-        UITabBar.appearance().tintColor = UIColor.asForeground
+        UITabBar.appearance().tintColor = UIColor.asMainOrange
     }
 }

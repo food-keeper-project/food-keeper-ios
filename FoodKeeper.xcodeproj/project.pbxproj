@@ -53,6 +53,7 @@
 		06C294DC2F20F455006CF961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C294CE2F20F455006CF961 /* AppDelegate.swift */; };
 		06C294DD2F20F455006CF961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C294D52F20F455006CF961 /* SceneDelegate.swift */; };
 		06C294E22F20F946006CF961 /* FoodKeeperFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06C294E12F20F946006CF961 /* FoodKeeperFoundation */; };
+		93AF2DD62F726BB200D5B0C2 /* DetailFoodInfoPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF2DD52F726BB200D5B0C2 /* DetailFoodInfoPopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		06C294D12F20F455006CF961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06C294D52F20F455006CF961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		06C294DF2F20F469006CF961 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		93AF2DD52F726BB200D5B0C2 /* DetailFoodInfoPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFoodInfoPopup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		063CEA112F322A8E00CD7B5C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93AF2DD42F726B9200D5B0C2 /* Popup */,
 				0611CF9A2F3796F5005277DD /* AllFood */,
 				061FDE182F36F38400950155 /* ExpiringFood */,
 			);
@@ -286,6 +289,14 @@
 				06B9702C2F2106A600DB6132 /* Sources */,
 			);
 			path = FoodKeeper;
+			sourceTree = "<group>";
+		};
+		93AF2DD42F726B9200D5B0C2 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				93AF2DD52F726BB200D5B0C2 /* DetailFoodInfoPopup.swift */,
+			);
+			path = Popup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +465,7 @@
 				0611CFA32F387861005277DD /* AllFoodTVCell.swift in Sources */,
 				0611CFA52F387883005277DD /* AllFoodSectionHeaderView.swift in Sources */,
 				061FDE172F322F7400950155 /* ExpiringFoodCVCell.swift in Sources */,
+				93AF2DD62F726BB200D5B0C2 /* DetailFoodInfoPopup.swift in Sources */,
 				067130812F4DC4B1001F2C36 /* AddFoodVM.swift in Sources */,
 				0611CF952F378249005277DD /* ExpiringInfoView.swift in Sources */,
 			);

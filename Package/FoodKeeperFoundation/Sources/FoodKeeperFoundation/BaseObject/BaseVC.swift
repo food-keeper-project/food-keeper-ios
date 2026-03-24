@@ -24,10 +24,11 @@ open class BaseVC: UIViewController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-        setUpLayout()
-        setUpNavigation()
-        setUpUI()
         setUpDefaultUI()
+        setUpNavigation()
+        setUpLayout()
+        setUpUI()
+        
     }
     open func setUpLayout() { }
     open func setUpNavigation() { }

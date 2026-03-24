@@ -132,8 +132,7 @@ final class HomeVC: BaseVC {
         }
         
         floatingBtn.snp.makeConstraints { make in
-            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(54)
-            make.trailing.equalTo(view.safeAreaLayoutGuide).inset(30)
+            make.bottom.trailing.equalTo(view.safeAreaLayoutGuide).inset(30)
             make.size.equalTo(60)
         }
         
@@ -201,7 +200,9 @@ final class HomeVC: BaseVC {
         
         let input = HomeVM.Input(
             viewWillAppearEvent: viewWillAppearEvent,
-            changeSelectedCategory: categorySelection
+            changeSelectedCategory: categorySelection,
+            didSelectExpiringFood: expiringFoodView.didSelectFood.asObservable(),
+            didSelectAllFood: allFoodTV.rx.modelSelected(FoodResponse.self).asObservable()
         )
         
         let output = vm.transform(input: input)
@@ -267,6 +268,17 @@ final class HomeVC: BaseVC {
                     .sorted { $0.header > $1.header }
             }
             .bind(to: allFoodTV.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
+        
+        // 상세화면 이동 처리
+        output.navigateToFoodDetail
+            .observe(on: MainScheduler.instance)
+            .bind(with: self, onNext: { owner, food in
+                let vc = DetailFoodInfoPopup(foodInfo: food)
+                vc.modalPresentationStyle = .overFullScreen
+                vc.modalTransitionStyle = .crossDissolve
+                self.present(vc, animated: true)
+            })
             .disposed(by: disposeBag)
     }
     

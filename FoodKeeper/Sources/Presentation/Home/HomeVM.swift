@@ -76,6 +76,23 @@ final class HomeVM: BaseVM {
                 }
             })
             .disposed(by: disposeBag)
+        
+        //유통기한 임박 식품 클릭 시
+        input.didSelectExpiringFood
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
+            .bind(with: self) { owner, food in
+                output.navigateToFoodDetail.onNext(food)
+            }
+            .disposed(by: disposeBag)
+        
+        //모든 식품 클릭 시
+        input.didSelectAllFood
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
+            .bind(with: self) { owner, food in
+                output.navigateToFoodDetail.onNext(food)
+            }
+            .disposed(by: disposeBag)
+        
             
         return output
     }
@@ -88,6 +105,8 @@ extension HomeVM {
     struct Input {
         let viewWillAppearEvent: Observable<Void>
         let changeSelectedCategory: Observable<FoodCategory>
+        let didSelectExpiringFood: Observable<FoodResponse>
+        let didSelectAllFood: Observable<FoodResponse>
     }
     
     struct Output {
@@ -98,5 +117,7 @@ extension HomeVM {
         let allFoods = PublishSubject<[FoodResponse]>()
         let categorys = PublishSubject<[FoodCategory]>()
         let selectedCategory = PublishSubject<FoodCategory>()
+        
+        let navigateToFoodDetail = PublishSubject<FoodResponse>()
     }
 }

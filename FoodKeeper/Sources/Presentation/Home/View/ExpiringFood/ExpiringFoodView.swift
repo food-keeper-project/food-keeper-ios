@@ -137,11 +137,13 @@ final class ExpiringFoodView: BaseView {
         expiringFoodCV1.rx.modelSelected(FoodResponse.self)
             .bind { item in
                 print("\(item.name) 클릭")
+                self.didSelectFood.accept(item)
             }.disposed(by: disposeBag)
         
         expiringFoodCV2.rx.modelSelected(FoodResponse.self)
             .bind { item in
                 print("\(item.name) 클릭")
+                self.didSelectFood.accept(item)
             }.disposed(by: disposeBag)
     }
     
